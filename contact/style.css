@@ -1,0 +1,156 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.contactUs {
+  min-height: 100vh;
+  background: url("./img/bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  border-top: 2px solid #007722;
+  border-bottom: 2px solid #007722;
+}
+
+.contactOverlay {
+  background: rgba(80, 0, 80, 0.7);
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.contactCard {
+  background-color: #fff;
+  margin: 10vh auto;
+  width: 80vw;
+  border-radius: 10px;
+}
+
+.contactCard h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #7d1b54;
+  margin: 7vh 0;
+}
+
+.formSection {
+  display: flex;
+}
+
+.leftForm {
+  flex: 1;
+}
+
+.inputField {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+}
+
+.inputField input {
+  margin-bottom: 2vh;
+  padding: 8px;
+  outline-color: #ad2775;
+  border: 1px solid #c48fae;
+}
+
+.inputField textarea {
+  padding: 8px;
+  outline-color: #ad2775;
+  border: 1px solid #c48fae;
+}
+
+.inputField button {
+  padding: 1.5vh 4vw;
+  margin: 6vh auto;
+  background: linear-gradient(to right, #7d1b54, #ad2775);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.inputField button:hover {
+  background: linear-gradient(to right, #007722, #02b635);
+  font-size: 17px;
+}
+
+.rightMap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.map-container {
+  flex: 1;
+  max-height: 35vh;
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.getInTouch {
+  display: flex;
+  margin: 5vh 0;
+}
+
+.innerContact {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  flex-direction: column;
+  height: 10vh;
+  margin-bottom: 3vh;
+}
+
+.innerContact i {
+  margin: auto;
+  font-size: 25px;
+  color: #7d1b54;
+}
+
+.innerContact p {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+@media (max-width: 830px) {
+  .formSection {
+    flex-direction: column;
+  }
+
+  .map-container {
+    flex: 1;
+    min-height: 35vh;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .getInTouch {
+    flex-direction: column;
+  }
+}
