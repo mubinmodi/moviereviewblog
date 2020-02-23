@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<div>
+		<ul>
+		  <li><img src="img/logo.jpg" style="height: 5vh"></li>
+		  <li><a class="active" href="#">Home</a></li>
+		  <li><a href="reviewpages/reviewshome.html">Reviews</a></li>
+		  <li><a href="#">Top 10's</a></li>
+		  <li><a href="#">Fan Theories</a></li>
+		  <li><a href="#">About Us</a></li>
+		  <li style="float: right;margin-right: 2vw;"><a href="login/login.html">Log In</a></li>
+		</ul>
+	</div>
+
+	<div id="landing">
+		<div id="overlay">
+			<!-- Remove h1 tag and add background image to "heading" div -->
+			<div id="heading"> 
+				<h1>Nerd Culture</h1>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+			<div id="landingbtn">
+				<div id="btnrow">
+					<a href="login/login.html"><button>Log In</button></a>
+					<a href="login/register.html"><button>Sign Up</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrap">
+  			<div id="arrow-left" class="arrow"></div>
+  			<div id="slider">
+    			<div class="slide slide1">
+      				<div class="slide-content">
+        			<span>Image One</span>
+      				</div>
+    			</div>
+    		<div class="slide slide2">
+      			<div class="slide-content">
+        		<span>Image Two</span>
+      			</div>
+    		</div>
+    		<div class="slide slide3">
+      			<div class="slide-content">
+       			 <span>Image Three</span>
+      			</div>
+    		</div>
+  			</div>
+  		<div id="arrow-right" class="arrow"></div>
+	</div>
+
+<script type="text/javascript">
+  	let sliderImages = document.querySelectorAll(".slide"),
+  	arrowLeft = document.querySelector("#arrow-left"),
+  	arrowRight = document.querySelector("#arrow-right"),
+  	current = 0;
+
+	// Clear all images
+	function reset() {
+	  for (let i = 0; i < sliderImages.length; i++) {
+    sliderImages[i].style.display = "none";
+	  }
+	}
+
+	// Init slider
+	function startSlide() {
+	  reset();
+	  sliderImages[0].style.display = "block";
+	}
+
+	// Show prev
+	function slideLeft() {
+	  reset();
+	  sliderImages[current - 1].style.display = "block";
+	  current--;
+	}
+
+	// Show next
+	function slideRight() {
+	  reset();
+	  sliderImages[current + 1].style.display = "block";
+	  current++;
+	}
+
+	// Left arrow click
+	arrowLeft.addEventListener("click", function() {
+	  if (current === 0) {
+	    current = sliderImages.length;
+	  }
+	  slideLeft();
+	});
+
+	// Right arrow click
+	arrowRight.addEventListener("click", function() {
+	  if (current === sliderImages.length - 1) {
+	    current = -1;
+	  }
+	  slideRight();
+	});
+
+	startSlide();
+</script>
+
+	<div id="reviews">
+		<div id="rehead">
+			<h1>Recent Reviews</h1>
+		</div>
+		<div id="cards">
+			<div id="card">
+				<div id="poster1" style="background: url('img/c4.jpg');background-size: cover;" 
+				onmouseover="displayRatings(1)" onmouseout="removeRatings(1)">
+				
+					<div id="posteroverlay1" style="display: none;">
+						<h3>IMDB: 8.9/10</h3>
+						<h3>Rotten Tomatos: 100%</h3>
+					</div>
+				</div>
+				<a href="file:///C:/Users/Mubin/Desktop/new%20Frontend/reviewpages/the-dark-knightreview.html"><h2 id="reviewname">THE DARK KNIGHT</h2></a>
+			</div>
+			<div id="card">
+				<div id="poster2" style="background: url('img/c2.jpg');background-size: cover;" 
+				onmouseover="displayRatings(2)" onmouseout="removeRatings(2)">
+					<div id="posteroverlay2" style="display: none;">
+						<h3>IMDB: 8.9/10</h3>
+						<h3>Rotten Tomatos: 100%</h3>
+					</div>
+				</div>
+				<h2 id="reviewname">Captain America: The first avenger</h2>
+			</div>
+			<div id="card">
+				<div id="poster3" style="background: url('img/c3.jpg');background-size: cover;" 
+				onmouseover="displayRatings(3)" onmouseout="removeRatings(3)">
+					<div id="posteroverlay3" style="display: none;">
+						<h3>IMDB: 8.9/10</h3>
+						<h3>Rotten Tomatos: 100%</h3>
+					</div>
+				</div>
+				<h2 id="reviewname">One Piece</h2>
+			</div>
+		</div>
+	</div>
+
+    <div class="footer">
+		<div class="footerinner" id="copy">
+			<p>Nerd Culture Copyright &copy; 2019</p>
+		</div>
+
+		<div class="footerinner" id="icons">
+			<a href="">
+				<i class="fab fa-instagram"></i>
+			</a>
+			<a href="">
+				<i class="fab fa-facebook"></i>
+			</a>
+			<a href="">
+				<i class="fab fa-twitter"></i>
+			</a>		
+		</div>
+
+		<div class="footerinner" id="email">
+			<p>mubinmodi@gmail.com</p>	
+		</div>
+	</div>
+    
+	<script type="text/javascript">
+		function displayRatings(num){
+			var over = "posteroverlay" + num;
+			var poster = "poster" + num;
+			document.getElementById(over).style.display = "block";
+			document.getElementById(poster).style.border = "5px solid #888";
+		}
+
+		function removeRatings(num){
+			var over = "posteroverlay" + num;
+			var poster = "poster" + num;
+			document.getElementById(over).style.display = "none";
+			document.getElementById(poster).style.border = "5px solid white";
+		}
+	</script>
+</body>
+</html>

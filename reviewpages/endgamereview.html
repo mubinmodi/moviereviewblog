@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="endgamereview.css">
+	
+	<style>
+	.circle {
+	  height: 100px;
+	  width: 100px;
+	  background-color: #555;
+	  border-radius: 50%;
+	  display: flex;
+	}
+	.circle h5{
+		margin: auto;
+	}
+	.proscons{
+		display: flex;
+		padding: 2vw;
+	}
+	.proscons li{
+		margin: 1vw;
+		margin-left: 2vw;
+	}
+	.pros,.cons{
+		margin: 0 5vw;
+	}
+	.proscons ul{
+		padding: 0 20px;
+		list-style-type: circle;
+	}
+</style>
+</head>
+<body>
+<div>
+		<ul>
+		  <li><img src="../img/logo.jpg" style="height: 5vh"></li>
+		  <li><a class="active" href="../index.html">Home</a></li>
+		  <li><a href="../reviewpages/reviewshome.html">Reviews</a></li>
+		  <li><a href="../">Top 10's</a></li>
+		  <li><a href="../contact/contact.html">Contact Us</a></li>
+		  <li style="float: right;margin-right: 2vw;"><a href="../login/login.html">Log In</a></li>
+		</ul>
+<div class="wrap">
+  <div id="arrow-left" class="arrow"></div>
+  <div id="slider">
+    <div class="slide slide1">
+      <div class="slide-content">
+        <span>Image One</span>
+      </div>
+    </div>
+    <div class="slide slide2">
+      <div class="slide-content">
+        <span>Image Two</span>
+      </div>
+    </div>
+    <div class="slide slide3">
+      <div class="slide-content">
+        <span>Image Three</span>
+      </div>
+    </div>
+  </div>
+  <div id="arrow-right" class="arrow"></div>
+</div>
+<script type="text/javascript">
+  let sliderImages = document.querySelectorAll(".slide"),
+  arrowLeft = document.querySelector("#arrow-left"),
+  arrowRight = document.querySelector("#arrow-right"),
+  current = 0;
+
+// Clear all images
+function reset() {
+  for (let i = 0; i < sliderImages.length; i++) {
+    sliderImages[i].style.display = "none";
+  }
+}
+
+// Init slider
+function startSlide() {
+  reset();
+  sliderImages[0].style.display = "block";
+}
+
+// Show prev
+function slideLeft() {
+  reset();
+  sliderImages[current - 1].style.display = "block";
+  current--;
+}
+
+// Show next
+function slideRight() {
+  reset();
+  sliderImages[current + 1].style.display = "block";
+  current++;
+}
+
+// Left arrow click
+arrowLeft.addEventListener("click", function() {
+  if (current === 0) {
+    current = sliderImages.length;
+  }
+  slideLeft();
+});
+
+// Right arrow click
+arrowRight.addEventListener("click", function() {
+  if (current === sliderImages.length - 1) {
+    current = -1;
+  }
+  slideRight();
+});
+
+startSlide();
+</script>
+</div>
+<div id="overlay" ><h1>AVENGERS ENDGAME</h1>
+	<p>
+		The less you know going into Avengers: Endgame, the more you’re likely to enjoy it. Obviously, you wouldn’t have clicked on a review of this movie if you didn’t want to know something about the culmination of a decade’s worth of Marvel’s superhero storytelling, but trust me: more than Avengers: Infinity War, more than any Star Wars movie, Endgame is truly a story that needs to be experienced. Forget all the external noise from the deliberately vague teaser trailers, perfectly-calibrated celebrity soundbites, and footage leaks, and just strap in for the ride.
+	</p><p>
+
+What you take away from Endgame may depend on how deeply you’ve connected with any number of the 21 movies that preceded it. If you’re curious, for example, whether you need to have seen Captain Marvel to understand her inclusion here, it's not required viewing in terms of plot but it does give context to her appearance in a way that might otherwise feel a little jarring if this is your first time meeting her. Overall, this is a movie that rewards your knowledge of the MCU in its entirety.
+</p><p>
+
+There’s little that can be said about the film without at least alluding to its twists, but what I can say, with certainty, is that Avengers: Endgame is a marvel, both in terms of narrative scale and sheer logistical ambition. In Infinity War, Thanos spoke of the need for balance, and Endgame achieves that goal with surprising confidence. In the deft hands of screenwriters Christopher Markus and Stephen McFeely, and directors Joe and Anthony Russo, the film walks a tightrope between high drama and cathartic comedy, offering some of the darkest and most emotionally honest scenes in the history of the MCU, alongside some of the most ridiculous and sublime. There are fewer laugh-out-loud moments here than in Infinity War, but it’s certainly lighter and oftentimes more joyous than you might expect from a story that begins with the fallout from Thanos’ snap.
+</p><p>
+Endgame is a film that feels like it was made by fans, for fans - to the point where some scenes will undoubtedly be labeled as outright fanservice. But it’s hard to view those moments as cynical pandering so much as earned and effective homages to the moments, characters, and relationships we’ve grown so invested in over the past 11 years. Several scenes truly feel like a Jack Kirby splash page come to life, and that’s an utterly exhilarating realization, something that forces you to absorb the sheer scope of what Marvel Studios boss Kevin Feige and his team have assembled: an interconnected cinematic endeavor beyond comparison.
+
+</p><p>
+
+While Infinity War did its best to juggle an enormous roster of heroes spanning the entirety of the MCU’s history (to mixed results, depending on who you ask), it’s no spoiler to say Endgame rightly narrows its focus to the original six Avengers (with an assist from their fellow survivors), giving them each a well-deserved moment - or several - in the spotlight. The cost of sidelining so many characters is high, but it pays off brilliantly.
+</p><p>
+Markus and McFeely’s script allows for some unexpected subversions of certain heroes - including a few choices that will surely be divisive - but fans of the MCU’s holy trinity of Iron Man, Captain America, and Thor should find plenty of iconic moments to satisfy them. That’s not to say that other characters aren’t equally pivotal, but for fear of spoilers we won’t dig into that here. At the same time, several heroes get less to do than you might expect, but when considering the MCU as a whole - as well as its potential future - you can see why the writers decided to pursue this particular path, out of the 14 million possible ways it could’ve gone.
+
+</p><p>
+Much has been made of the film’s epic three-hour and one-minute length, but considering how dense it is (and truly, Endgame packs a lot into that supersized runtime) on first watch, the pacing feels tighter than Infinity War’s, and it doesn’t outstay its welcome the way Lord of the Rings: Return of the King did.
+</p><p>
+The main criticism that can be leveled against Avengers: Endgame (or at least the only one we can discuss in broad terms without spoiling anything) is one that has plagued most Marvel movies up to this point: an overreliance on overproduced CGI battles which, despite elaborate staging, can’t help but devolve into numbing, pixel-on-pixel slugfests. The film features several impressive setpieces that effectively ground the action with emotional stakes, and they prove to be some of the high points of the narrative, but when the focus widens to a larger canvas, some of the urgency and clarity is lost. Thankfully, much of the story retains a laser focus and specific goals for our heroes to pursue, which gives Endgame a momentum and gravity that propels it even in the quieter, more character-driven moments.
+
+
+</p><p>
+It’s in those moments where Endgame excels - as epic as some of the fight sequences are, we’re also given insight into our heroes’ mental states in a way we’ve rarely had time for in past team-ups; there are pauses for grief, guilt, love, and longing, which ultimately makes the escalating action all the more rewarding.
+</p><p>
+But perhaps Endgame’s greatest accomplishment is how it deepens our understanding and appreciation of the movies that preceded it. This is truly a climax to an entire franchise, not just a resolution to the cliffhanger of Infinity War. Even though we know the MCU will continue in one form or another thanks to the prequels, sequels, and spinoffs that are already in development, there’s no denying that this is the end of an era - not just for our heroes, but for a generation of fans who have grown and changed and forged their own families alongside them. Endgame may be the final film Stan Lee appears in, but thanks to these indelible characters and the actors who breathed life into them, it feels like his momentous artistic legacy is in good hands.
+</p><p>
+
+</p>
+
+		
+</div>
+<div id="article-review">
+	<h1 style="margin-bottom: 0;">Verdict</h1>
+	<div class="proscons">
+		<div class="pros">
+			<h2>Pros</h2>
+			<ul>
+				<li>Heath Ledger's Joker is the toughest foe Batman has come across. </li>
+				<li>Movie is well thought out with an amazing 3rd act.</li>
+				
+			</ul>
+		</div>
+		<div class="cons">
+			<h2>Cons</h2>
+			<ul>
+				<li>This may not have been the only way for Marvel to end the first chapter of its sprawling superhero saga, but when faced with 14,000,605 possible outcomes, it manages to be a surprising and satisfying one.</li>
+				<li>It will inevitably provoke years of spirited debate among fans, and an overreliance on messy CGI action blunts some of its impact, but in terms of pure heart, Endgame holds nothing back.</li>
+				
+			</ul>
+		</div>
+
+	</div>
+	<div>
+	
+		<div id="header">
+			<h1 style="text-align: left;">Score</h1>
+		</div>
+	
+	<div id="ratingcard">
+		<div id="rating" style="margin: 0 11%">
+				<div class="circle">
+					<h5>9/10</h5>	
+				</div>
+				<h3 style="margin: 5px 21px;">Imdb Rating</h3>
+			</div>
+				
+			<div id="rating" style="margin: 0 11%">
+				<div class="circle">
+					<h5>98%</h5>	
+				</div>
+				<h3 style="margin: 5px 21px;">Rotten <br> Tomatoes Rating</h3>
+			</div>
+			<div id="rating" style="margin: 0 11%">
+				<div class="circle">
+					<h5>9.8/10</h5>
+				</div>
+				<h3 style="margin: 5px 21px;">Mera Rating</h3>
+			</div>
+			</div>
+		</div>
+</div>
+<div id="related articles">
+	
+</div>
+</body>
+</html>

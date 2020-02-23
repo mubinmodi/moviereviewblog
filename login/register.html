@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="loginbox">
+        <img src="../img/person1.jpg">
+        <h1>Register Here</h1>
+        <form class="myform" method="post" action="login.html">
+            <p>Username</p>
+            <input type="text" id="username" class="inputvalues" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" id="password" class="inputvalues" placeholder="Enter Password">
+            <p>Confirm Password</p>
+            <input type="password" class="inputvalues" placeholder="Enter Password">
+            <input type="button" id="backbutton" value="Register" onclick="register()">
+
+            
+            
+        </form>
+
+    </div>
+
+    <script>
+        function register(){
+            var form_username = document.getElementById('username').value;
+            var form_password = document.getElementById('password').value;
+            $.ajax({
+                url:"../backend/reg.php", //the page containing php script
+                type: "post", //request type
+                data: {
+                    username: form_username,
+                    password: form_password
+                 },
+                success:function(data){
+                    if(data === "Team Info Added")
+                        window.location = "../index.html";
+                    else
+                        alert(data);
+               }
+             });
+        }
+    </script>
+    
+</body>
+</html>

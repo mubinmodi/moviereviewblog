@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="loganreview.css">
+	
+	<style>
+	.circle {
+	  height: 100px;
+	  width: 100px;
+	  background-color: #555;
+	  border-radius: 50%;
+	  display: flex;
+	}
+	.circle h5{
+		margin: auto;
+	}
+	.proscons{
+		display: flex;
+		padding: 2vw;
+	}
+	.proscons li{
+		margin: 1vw;
+		margin-left: 2vw;
+	}
+	.pros,.cons{
+		margin: 0 5vw;
+	}
+	.proscons ul{
+		padding: 0 20px;
+		list-style-type: circle;
+	}
+</style>
+</head>
+<body>
+<div>
+		<ul>
+		  <li><img src="../img/logo.jpg" style="height: 5vh"></li>
+		  <li><a class="active" href="../index.html">Home</a></li>
+		  <li><a href="../reviewpages/reviewshome.html">Reviews</a></li>
+		  <li><a href="../">Top 10's</a></li>
+		  <li><a href="../contact/contact.html">Contact Us</a></li>
+		  <li style="float: right;margin-right: 2vw;"><a href="../login/login.html">Log In</a></li>
+		</ul>
+<div class="wrap">
+  <div id="arrow-left" class="arrow"></div>
+  <div id="slider">
+    <div class="slide slide1">
+      <div class="slide-content">
+        <span>Image One</span>
+      </div>
+    </div>
+    <div class="slide slide2">
+      <div class="slide-content">
+        <span>Image Two</span>
+      </div>
+    </div>
+    <div class="slide slide3">
+      <div class="slide-content">
+        <span>Image Three</span>
+      </div>
+    </div>
+  </div>
+  <div id="arrow-right" class="arrow"></div>
+</div>
+<script type="text/javascript">
+  let sliderImages = document.querySelectorAll(".slide"),
+  arrowLeft = document.querySelector("#arrow-left"),
+  arrowRight = document.querySelector("#arrow-right"),
+  current = 0;
+
+// Clear all images
+function reset() {
+  for (let i = 0; i < sliderImages.length; i++) {
+    sliderImages[i].style.display = "none";
+  }
+}
+
+// Init slider
+function startSlide() {
+  reset();
+  sliderImages[0].style.display = "block";
+}
+
+// Show prev
+function slideLeft() {
+  reset();
+  sliderImages[current - 1].style.display = "block";
+  current--;
+}
+
+// Show next
+function slideRight() {
+  reset();
+  sliderImages[current + 1].style.display = "block";
+  current++;
+}
+
+// Left arrow click
+arrowLeft.addEventListener("click", function() {
+  if (current === 0) {
+    current = sliderImages.length;
+  }
+  slideLeft();
+});
+
+// Right arrow click
+arrowRight.addEventListener("click", function() {
+  if (current === sliderImages.length - 1) {
+    current = -1;
+  }
+  slideRight();
+});
+
+startSlide();
+</script>
+</div>
+<div id="overlay" ><h1> LOGAN REVIEW </h1>
+
+		<p >In some ways, Logan is the Wolverine film that many fans have long awaited, replete with a heavy dose of R-rated violence, adult language and earth-shattering, gut-wrenching revelations. And yet, Hugh Jackman’s final appearance as the X-Man that made him famous also serves as a meditation on the very nature of superhero stories and the comic-book movie genre itself.
+		</p>
+		<p>
+		Based loosely on the Old Man Logan storyline from the comics, the film takes place in a future that’s not quite post-apocalyptic, but sure seems to be teetering on the edge. Mutants have all but vanished from the population, and the few that remain appear to be in hiding. That includes Logan and a diminished, ancient, and mentally deteriorating Professor Xavier. The return of Patrick Stewart to the role is one of the hugely satisfying aspects of Logan, as the revered thespian finally gets to bring a true depth to the character -- if in a distinctly new way. His Professor X has always been mostly sidelined in the movies, but not in Logan: Sometimes tragic, sometimes hilarious, this is an Xavier you’ve never seen before.
+		</p>
+		<p>
+		Logan and Stephen Merchant’s fellow mutant Caliban care for Xavier, who when we first meet him is heavily medicated and out of his mind. And Logan is no longer a claws-baring superhero but an aging shadow of his former self -- a simple limo driver, trying to make enough money to get this odd trio away from it all. But when a young girl known only as Laura shows up, the film’s real journey begins as Logan becomes her reluctant guardian against the dark forces that have brought mutantkind to its knees.
+		</p>
+		<p>
+		Director James Mangold also helmed 2013’s very good The Wolverine, but with Logan he’s looking to push the boundaries of the superhero movie genre and even question it. There are no colorful costumes in Logan, no crazy, CGI-fueled threats from up above. In their place are just the four-color comics that Laura reads, and which Logan scoffs at as mere confections that skew what life was really like for the X-Men. “Maybe a quarter of it happened, and not like this,” Logan sneers. Here Mangold seems to be throwing into doubt the very existence of the previous films in the series. Were they all just a fictionalized version of Logan’s life? (I think the answer in part is that Mangold and Jackman aren’t terribly concerned about the continuity of the X-universe, and that attitude helps make Logan a better film as it doesn’t have to worry about anything but telling its own story.)
+		</p>
+		<p>
+		In fact, the world of Logan seems eerily like an extension of our own -- if one or two steps worse off. Even though the film was shot a year ago (and written even before that, of course) it somehow predicted many of the existential crises America is currently facing in the current post-election landscape. Wolverine drives his limo along the Mexican border, where dudes shout “USA” and would-be immigrants are cordoned off. A desperate band of refugees tries to make its way through the U.S. while evading corporate and government forces. And not for nothing, but Xavier can’t afford his prescription meds which keep his enormous telepathic abilities in check.
+		</p>
+		<p>
+		Speaking of which, the film has plenty of action set pieces that impress not just in the bloody, ruthless slicing and dicing that Wolverine finally gets to do, but also because of the more inventive spins they sometimes put on the characters’ powers. One particular standout is an extended and intense sequence where Logan must slowly fight his way through one of Xavier’s paralyzing psionic episodes -- it’s a scene that has to be experienced firsthand for its full, visceral effect in order to be truly appreciated.
+
+		</p>
+		<p>
+		Of course, the marketing of the film doesn’t hide that Laura, a.k.a. X-23, shares a special bond with Logan, and young actress Dafne Keen is perfectly cast in the make-it-or-break-it role. She’s a vicious berserker, but Mangold and his co-writer Scott Frank also give her a dose of wry humor, particularly in her interactions with Wolverine, and a warmth that makes her much more than just another action figure. As popular as X-23 is in some fan circles, the character isn’t just stunt casting in Logan; the connection between her and Logan comes to inform the latter’s character arc over the past nine X-movies and truly is the bedrock of this film.
+		</p>
+		<p>
+		Boyd Holbrook and Richard E. Grant play the main heavies in the film, Donald Pierce and Zander Rice respectively, who both were integral in Laura’s life before she joined Wolverine. Holbrook is scary and funny at times as a sort of evil fanboy who looks back at the old days when mutants roamed the earth like a kid flicking through a baseball card collection, though Grant unfortunately doesn’t have a ton to do aside from dropping some exposition which ties a few disparate plot points together in the final act.
+
+		</p>
+		<p>
+
+		That’s fine though, because the film is all about Jackman, Stewart and Keen (and even Merchant to a degree, who I’ve always thought of as a comedian but is just great in a dramatic turn here). Mangold doesn’t pull any punches when dealing with how this group has reached this point in their lives, what has happened to the rest of the world’s mutants (and the X-Men), and where it’s all leading. It’s a refreshing take on the modern comic-book movie, where all bets are off and no holds are barred. That, combined with Mangold’s Western influenced stylings but also a willingness to still insert sci-fi elements, adds up to a thrilling, one-of-a-kind experience.
+		</p>
+		<p>
+		The Verdict</p>
+		<p>
+		Logan is in many ways an emotional, heavy picture, but it’s also an uplifting one that reminds us that it’s okay to fight for something more, something better. It’s an amazing swan song for the Wolverine character, and for Jackman, and perhaps the best X-Men movie yet.
+		</p>
+</div>
+<div id="article-review">
+	<h1 style="margin-bottom: 0;">Verdict</h1>
+	<div class="proscons">
+		<div class="pros">
+			<h2>Pros</h2>
+			<ul>
+				<li>In his two Batman movies, Nolan has freed the character</li>
+				<li>In his two Batman movies, Nolan has freed the character</li>
+				<li>In his two Batman movies, Nolan has freed the character</li>
+				<li>In his two Batman movies, Nolan has freed the character</li>
+			</ul>
+		</div>
+		<div class="cons">
+			<h2>Cons</h2>
+			<ul>
+				<li>In his two Batman movies, Nolan has freed the character</li>
+				<li>In his two Batman movies, Nolan has freed the character</li>
+				<li>In his two Batman movies, Nolan has freed the character</li>
+				<li>In his two Batman movies, Nolan has freed the character</li>
+			</ul>
+		</div>
+
+	</div>
+	<div>
+	
+		<div id="header">
+			<h1 style="text-align: left;">Score</h1>
+		</div>
+	
+		<div id="ratingcard">
+		<div id="rating" style="margin: 0 11%">
+			<div class="circle">
+				<h5>9/10</h5>	
+			</div>
+			<h3 style="margin: 5px 21px;">Imdb Rating</h3>
+		</div>
+			
+		<div id="rating" style="margin: 0 11%">
+			<div class="circle">
+				<h5>98%</h5>	
+			</div>
+			<h3 style="margin: 5px 21px;">Rotten <br> Tomatoes Rating</h3>
+		</div>
+		<div id="rating" style="margin: 0 11%">
+			<div class="circle">
+				<h5>9.8/10</h5>
+			</div>
+			<h3 style="margin: 5px 21px;">Mera Rating</h3>
+		</div>
+		</div>
+		<div>
+			<div id="Pros"> 
+
+			</div>
+			<div id="Cons"> 
+			</div>
+		</div>
+
+	</div>
+</div>
+<div id="related articles">
+	
+</div>
+</body>
+</html>

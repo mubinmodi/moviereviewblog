@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="the-dark-knightreview.css">
+	
+	<style>
+	.circle {
+	  height: 100px;
+	  width: 100px;
+	  background-color: #555;
+	  border-radius: 50%;
+	  display: flex;
+	}
+	.circle h5{
+		margin: auto;
+	}
+	.proscons{
+		display: flex;
+		padding: 2vw;
+	}
+	.proscons li{
+		margin: 1vw;
+		margin-left: 2vw;
+	}
+	.pros,.cons{
+		margin: 0 5vw;
+	}
+	.proscons ul{
+		padding: 0 20px;
+		list-style-type: circle;
+	}
+</style>
+</head>
+<body>
+<div>
+		<ul>
+		  <li><img src="../img/logo.jpg" style="height: 5vh"></li>
+		  <li><a class="active" href="../index.html">Home</a></li>
+		  <li><a href="../reviewpages/reviewshome.html">Reviews</a></li>
+		  <li><a href="../">Top 10's</a></li>
+		  <li><a href="../contact/contact.html">Contact Us</a></li>
+		  <li style="float: right;margin-right: 2vw;"><a href="../login/login.html">Log In</a></li>
+		</ul>
+		
+<div class="wrap">
+  <div id="arrow-left" class="arrow"></div>
+  <div id="slider">
+    <div class="slide slide1">
+      <div class="slide-content">
+        <span>Image One</span>
+      </div>
+    </div>
+    <div class="slide slide2">
+      <div class="slide-content">
+        <span>Image Two</span>
+      </div>
+    </div>
+    <div class="slide slide3">
+      <div class="slide-content">
+        <span>Image Three</span>
+      </div>
+    </div>
+  </div>
+  <div id="arrow-right" class="arrow"></div>
+</div>
+<script type="text/javascript">
+  let sliderImages = document.querySelectorAll(".slide"),
+  arrowLeft = document.querySelector("#arrow-left"),
+  arrowRight = document.querySelector("#arrow-right"),
+  current = 0;
+
+// Clear all images
+function reset() {
+  for (let i = 0; i < sliderImages.length; i++) {
+    sliderImages[i].style.display = "none";
+  }
+}
+
+// Init slider
+function startSlide() {
+  reset();
+  sliderImages[0].style.display = "block";
+}
+
+// Show prev
+function slideLeft() {
+  reset();
+  sliderImages[current - 1].style.display = "block";
+  current--;
+}
+
+// Show next
+function slideRight() {
+  reset();
+  sliderImages[current + 1].style.display = "block";
+  current++;
+}
+
+// Left arrow click
+arrowLeft.addEventListener("click", function() {
+  if (current === 0) {
+    current = sliderImages.length;
+  }
+  slideLeft();
+});
+
+// Right arrow click
+arrowRight.addEventListener("click", function() {
+  if (current === sliderImages.length - 1) {
+    current = -1;
+  }
+  slideRight();
+});
+
+startSlide();
+</script>
+</div>
+<div id="overlay" ><h1>THE DARK KNIGHT </h1>
+
+		<p >“Batman” isn’t a comic book anymore. Christopher Nolan’s “The Dark Knight” is a haunted film that leaps beyond its origins and becomes an engrossing tragedy. It creates characters we come to care about. That’s because of the performances, because of the direction, because of the writing, and because of the superlative technical quality of the entire production. This film, and to a lesser degree “Iron Man,” redefine the possibilities of the “comic-book movie.”
+	</p>
+	<p>
+	“The Dark Knight” is not a simplistic tale of good and evil. Batman is good, yes, The Joker is evil, yes. But Batman poses a more complex puzzle than usual: The citizens of Gotham City are in an uproar, calling him a vigilante and blaming him for the deaths of policemen and others. And the Joker is more than a villain. He’s a Mephistopheles whose actions are fiendishly designed to pose moral dilemmas for his enemies.
+	</p>
+	<p>
+	The key performance in the movie is by the late Heath Ledger, as the Joker. Will he become the first posthumous Oscar winner since Peter Finch? His Joker draws power from the actual inspiration of the character in the silent classic “The Man Who Laughs” (1928). His clown's makeup more sloppy than before, his cackle betraying deep wounds, he seeks revenge, he claims, for the horrible punishment his father exacted on him when he was a child. In one diabolical scheme near the end of the film, he invites two ferry-loads of passengers to blow up the other before they are blown up themselves. Throughout the film, he devises ingenious situations that force Batman (Christian Bale), Commissioner Gordon (Gary Oldman) and District Attorney Harvey Dent (Aaron Eckhart) to make impossible ethical decisions. By the end, the whole moral foundation of the Batman legend is threatened.
+	</p>
+	<p>
+	Because these actors and others are so powerful, and because the movie does not allow its spectacular special effects to upstage the humans, we’re surprised how deeply the drama affects us. Eckhart does an especially good job as Harvey Dent, whose character is transformed by a horrible fate into a bitter monster. It is customary in a comic book movie to maintain a certain knowing distance from the action, to view everything through a sophisticated screen. “The Dark Knight” slips around those defenses and engages us.
+	</p>
+	<p>
+	Yes, the special effects are extraordinary. They focus on the expected explosions and catastrophes, and have some superb, elaborate chase scenes. The movie was shot on location in Chicago, but it avoids such familiar landmarks as Marina City, the Wrigley Building or the skyline. Chicagoans will recognize many places, notably La Sals, and a key sequence is set in the still-uncompleted Trump Tower. Through these heights, the Batman moves at the end of strong wires, or sometimes actually flies, using his cape as a parasail.
+	</p>
+	<p>
+	The plot involves nothing more or less than the Joker’s attempts to humiliate the forces for good and expose Batman’ secret identity, showing him to be a poser and a fraud. He includes Gordon and Dent on his target list, and contrives cruel tricks to play with the fact that Bruce Wayne once loved, and Harvey Dent now loves, Assistant D.A. Rachel Dawes (Maggie Gyllenhaal). The tricks are more cruel than he realizes, because the Joker doesn’t know Batman’s identity. Heath Ledger has a good deal of dialogue in the movie, and a lot of it isn’t the usual jabs and jests we’re familiar with: It’s psychologically more complex, outlining the dilemmas he has constructed, and explaining his reasons for them. The screenplay by Christopher Nolan and his brother Jonathan (who first worked together on “Memento”) has more depth and poetry than we might have expected.
+	</p>
+	<p>
+	Two of the supporting characters are crucial to the action, and are played effortlessly by the great actors Morgan Freeman and Michael Caine. Freeman, as the scientific genius Lucius Fox, is in charge of Bruce Wayne’s underground headquarters, and makes an ethical objection to a method of eavesdropping on all of the citizens of Gotham City. His stand has current political implicstions. Caine is the faithful butler Alfred, who understands Wayne better than anybody, and makes a decision about a crucial letter.
+	</p>
+	<p>
+	Nolan also directed the previous, and excellent, “Batman Begins” (2005), which went into greater detail than ever before about Bruce Wayne’s origins and the reasons for his compulsions. Now it is the Joker’s turn, although his past is handled entirely with dialogue, not flashbacks. There are no references to Batman’s childhood, but we certainly remember it, and we realize that this conflict is between two adults who were twisted by childhood cruelty — one compensating by trying to do good, the other by trying to do evil. Perhaps they instinctively understand that themselves.
+	</p>
+	<p>
+	Something fundamental seems to be happening in the upper realms of the comic-book movie. “Spider-Man II” (2004) may have defined the high point of the traditional film based on comic-book heroes. A movie like the new “Hellboy II” allows its director free rein for his fantastical visions. But now “Iron Man” and even more so “The Dark Knight” move the genre into deeper waters. They realize, as some comic-book readers instinctively do, that these stories touch on deep fears, traumas, fantasies and hopes. And the Batman legend, with its origins in film noir, is the most fruitful one for exploration.
+	</p>
+	<p>
+	In his two Batman movies, Nolan has freed the character to be a canvas for a broader scope of human emotion. For Bruce Wayne is a deeply troubled man, let there be no doubt, and if ever in exile from his heroic role, it would not surprise me what he finds himself capable of doing.
+	</p>
+</div>
+<div id="article-review">
+	<h1 style="margin-bottom: 0;">Verdict</h1>
+	<div class="proscons">
+		<div class="pros">
+			<h2>Pros</h2>
+			<ul>
+				<li>Heath Ledger's Joker is the toughest foe Batman has come across. </li>
+				<li>Movie is well thought out with an amazing 3rd act.</li>
+				
+			</ul>
+		</div>
+		<div class="cons">
+			<h2>Cons</h2>
+			<ul>
+				<li>The sometimes shys away from exploring the joker's insanity because of being PG13</li>
+				
+			</ul>
+		</div>
+
+	</div>
+	<div>
+	
+		<div id="header">
+			<h1 style="text-align: left;">Score</h1>
+		</div>
+	
+		<div id="ratingcard">
+		<div id="rating" style="margin: 0 11%">
+			<div class="circle">
+				<h5>9/10</h5>	
+			</div>
+			<h3 style="margin: 5px 21px;">Imdb Rating</h3>
+		</div>
+			
+		<div id="rating" style="margin: 0 11%">
+			<div class="circle">
+				<h5>98%</h5>	
+			</div>
+			<h3 style="margin: 5px 21px;">Rotten <br> Tomatoes Rating</h3>
+		</div>
+		<div id="rating" style="margin: 0 11%">
+			<div class="circle">
+				<h5>9.8/10</h5>
+			</div>
+			<h3 style="margin: 5px 21px;">Mera Rating</h3>
+		</div>
+		</div>
+	
+	</div>
+</div>
+<div id="related articles">
+	
+</div>
+</body>
+</html>

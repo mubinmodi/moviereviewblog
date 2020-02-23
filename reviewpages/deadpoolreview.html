@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="deadpoolreview.css">
+	
+	<style>
+	.circle {
+	  height: 100px;
+	  width: 100px;
+	  background-color: #555;
+	  border-radius: 50%;
+	  display: flex;
+	}
+	.circle h5{
+		margin: auto;
+	}
+	.proscons{
+		display: flex;
+		padding: 2vw;
+	}
+	.proscons li{
+		margin: 1vw;
+		margin-left: 2vw;
+	}
+	.pros,.cons{
+		margin: 0 5vw;
+	}
+	.proscons ul{
+		padding: 0 20px;
+		list-style-type: circle;
+	}
+</style>
+</head>
+<body>
+<div>
+		<ul>
+		  <li><img src="../img/logo.jpg" style="height: 5vh"></li>
+		  <li><a class="active" href="../index.html">Home</a></li>
+		  <li><a href="../reviewpages/reviewshome.html">Reviews</a></li>
+		  <li><a href="../">Top 10's</a></li>
+		  <li><a href="../contact/contact.html">Contact Us</a></li>
+		  <li style="float: right;margin-right: 2vw;"><a href="../login/login.html">Log In</a></li>
+		</ul>
+<div class="wrap">
+  <div id="arrow-left" class="arrow"></div>
+  <div id="slider">
+    <div class="slide slide1">
+      <div class="slide-content">
+        <span>Image One</span>
+      </div>
+    </div>
+    <div class="slide slide2">
+      <div class="slide-content">
+        <span>Image Two</span>
+      </div>
+    </div>
+    <div class="slide slide3">
+      <div class="slide-content">
+        <span>Image Three</span>
+      </div>
+    </div>
+  </div>
+  <div id="arrow-right" class="arrow"></div>
+</div>
+<script type="text/javascript">
+  let sliderImages = document.querySelectorAll(".slide"),
+  arrowLeft = document.querySelector("#arrow-left"),
+  arrowRight = document.querySelector("#arrow-right"),
+  current = 0;
+
+// Clear all images
+function reset() {
+  for (let i = 0; i < sliderImages.length; i++) {
+    sliderImages[i].style.display = "none";
+  }
+}
+
+// Init slider
+function startSlide() {
+  reset();
+  sliderImages[0].style.display = "block";
+}
+
+// Show prev
+function slideLeft() {
+  reset();
+  sliderImages[current - 1].style.display = "block";
+  current--;
+}
+
+// Show next
+function slideRight() {
+  reset();
+  sliderImages[current + 1].style.display = "block";
+  current++;
+}
+
+// Left arrow click
+arrowLeft.addEventListener("click", function() {
+  if (current === 0) {
+    current = sliderImages.length;
+  }
+  slideLeft();
+});
+
+// Right arrow click
+arrowRight.addEventListener("click", function() {
+  if (current === sliderImages.length - 1) {
+    current = -1;
+  }
+  slideRight();
+});
+
+startSlide();
+</script>
+</div>
+<div id="overlay" ><h1> Movie name review </h1>
+
+		<p >You can incinerate, eviscerate, even decapitate Deadpool, and he’ll keep on coming. One atrocity he barely survived, however, was Wolverine: X-Men Origins, in which the merc’s mouth was literally sewn shut. Deadpool heals those old wounds with an entertaining, brash origin story that finally showcases the potential of this atypical hero. The risks it takes with its leading man are sadly lacking elsewhere – in terms of plot and villains, Deadpool is disappointingly conventional. But thankfully there’s enough weirdness poking through to offset these more predictable elements.
+
+</p>
+	<p>
+
+One of the reasons Deadpool works is Ryan Reynolds, who seizes the chance to do right by the character. He’s charismatic, exuberant, and larger-than-life, which isn’t easy considering how much of the film he spends either in a full-body costume or beneath heavy prosthetics. It helps that the suit looks like it walked straight out of a Marvel comic, but it’s really brought to life by Reynolds’ physical performance and some subtle CGI on the mask to really give this the character the level of expression he requires.
+</p>
+	<p>
+And Reynolds doesn’t shut up for the entire movie. From the first minute, you’re bombarded with one-liners, put-downs, and metafictional asides. It’s relentless stuff. Inevitably, when you’re throwing out so many lines, there’s going to be quite a few duds, but Deadpool’s hit ratio is pretty good.
+</p>
+	<p>
+There’s plenty of crass humour, but Deadpool is strongest comedically when it gets weird, and places its hero in more unexpected situations, like taking a cab, doing his laundry, or relaxing at home while his blind elderly flatmate builds IKEA furniture. A quaint yet surreal tone underpins Deadpool’s best scenes, and it’s unlike anything I’ve seen in another superhero film. There’s a definite Monty Python influence at work, which comes to the surface with Deadpool’s wonderful take on Holy Grail’s unstoppable Black Knight. At times it feels more like a surreal sitcom than a big action-comedy, and that’s no bad thing. In fact, I wish there were more of these offbeat digressions.
+</p>
+	<p>
+
+
+Even though it takes plenty of risks with its central character, Deadpool plays it safe when it comes to its choice of plot and villains. It’s a relatively straightforward origin story which evolves into an equally straightforward tale of revenge. Wade Wilson falls in love, is diagnosed with terminal cancer, and eventually enters a research programme that might cure him. Instead, he’s tortured and disfigured in an attempt to make him into a secret weapon. Wilson then spends the rest of the movie hunting down Ajax, the man in charge of this research project.
+</p>
+	<p>
+This idea of revenge works well in conveying how Deadpool differs from other costumed characters. Most superhero films typically feature a montage early on in which the hero has fun testing their newfound abilities – it usually involves leaping across rooftops – before accepting the responsibility of those powers and becoming a hero. Deadpool’s take on this sequence features him chasing leads and murdering those who have done him wrong with bloody style. While it is unexpected to see a costumed character use their newfound abilities to hurt and not help people, the revenge plot ultimately lacks bite and a satisfying conclusion since the targets are so weak.
+</p>
+	<p>
+As Ajax, Ed Skrein fails to become a truly threatening or memorable villain, since he’s given so little to do. He’s not helped by a general haziness surrounding his project to create super slaves either. At most, we get a sense these super slaves are being auctioned off to the wealthy and wicked, but there’s no hint at a deeper story being put into motion, and as a result the stakes don’t feel particularly high and Ajax feels little more than a stooge. There’s no evil plan for him to execute; in the end, he exists solely to be hunted. Meanwhile, the purpose of Gina Carano’s Angel Dust, as far as I can work out, is to hit things on Ajax’s behalf and look a bit moody.
+
+</p>
+	<p>
+
+In the comics, Deadpool marauds through the Marvel Universe, lampooning its heroes and creating unhinged mayhem. In the movie, however, he feels slightly constrained. The X-Men do feature – well, two to be exact – in an attempt to give Deadpool a bit more scale and tie him into a larger universe. It’s great to see more of Colossus on the big screen, and he’s played more comedically than his previous incarnations. Negasonic Teenage Warhead is also a fun addition, playing Colossus’s sullen trainee, but they’re used sparingly. Ultimately, it feels like Deadpool has been slightly confined in his first outing – maybe it’s because the present-day X-Men timeline is a bit up in the air, or simply budgetary reasons. To its credit, the movie is keenly aware of those problems, and in true Deadpool-style, turns it into yet another gag.
+</p>
+	<p>
+One area in which Deadpool doesn’t hold back is its gory, well-crafted action. The choreography is stylish throughout, with Deadpool switching elegantly between pistols and katanas, severing heads before round-housing them across the screen. He breaks bones and, simultaneously, the fourth-wall, providing amusing commentary on what’s going down, like exactly how many bullets he has left or whether he’s left the stove on. These are refined sequences full of creative violence and wit.
+</p>
+
+	<p>
+The Verdict
+Wade Wilson has been successfully revived on the big screen in a movie that’s full of amusing one-liners, stylish action, and heaps of fan service. Weak villains and an unsatisfying revenge plot ultimately hold it back from being something more distinctive, but Deadpool delivers a large dose of unwholesome fun.
+	</p>
+	
+</div>
+<div id="article-review">
+	<h1 style="margin-bottom: 0;">Verdict</h1>
+	<div class="proscons">
+		<div class="pros">
+			<h2>Pros</h2>
+			<ul>
+				<li>Reynolds is Deadpool</li>
+				<li>Offbeat humour</li>
+				<li>Stylish, bloody action</li>
+			</ul>
+		</div>
+		<div class="cons">
+			<h2>Cons</h2>
+			<ul>
+				<li>Weak Villains</li>
+				<li>Small-scale</li>
+				
+			</ul>
+		</div>
+
+	</div>
+	<div>
+	
+		<div id="header">
+			<h1 style="text-align: left;">Score</h1>
+		</div>
+	
+		<div id="ratingcard">
+		<div id="rating" style="margin: 0 11%">
+			<div class="circle">
+				<h5>9/10</h5>	
+			</div>
+			<h3 style="margin: 5px 21px;">Imdb Rating</h3>
+		</div>
+			
+		<div id="rating" style="margin: 0 11%">
+			<div class="circle">
+				<h5>98%</h5>	
+			</div>
+			<h3 style="margin: 5px 21px;">Rotten <br> Tomatoes Rating</h3>
+		</div>
+		<div id="rating" style="margin: 0 11%">
+			<div class="circle">
+				<h5>9.8/10</h5>
+			</div>
+			<h3 style="margin: 5px 21px;">Mera Rating</h3>
+		</div>
+		</div>
+		<div>
+			<div id="Pros"> 
+
+			</div>
+			<div id="Cons"> 
+			</div>
+		</div>
+
+	</div>
+</div>
+<div id="comments">
+	
+	
+</div>
+</body>
+</html>

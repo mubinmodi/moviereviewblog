@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="nolan.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	</head>
+	<body>
+		<div>
+					<ul>
+					   <li><img src="../img/logo.jpg" style="height: 5vh"></li>
+					  <li><a class="active" href="../index.html">Home</a></li>
+					  <li><a href="../reviewpages/reviewshome.html">Reviews</a></li>
+					  <li><a href="../">Top 10's</a></li>
+					  <li><a href="../contact/contact.html">Contact Us</a></li>
+					  <li style="float: right;margin-right: 2vw;"><a href="../login/login.html">Log In</a></li>
+					</ul>
+		</div>			
+			<div class="wrap">
+			  <div id="arrow-left" class="arrow"></div>
+			  <div id="slider">
+			    <div class="slide slide1">
+			      <div class="slide-content">
+			        <span>Image One</span>
+			      </div>
+			    </div>
+			    <div class="slide slide2">
+			      <div class="slide-content">
+			        <span>Image Two</span>
+			      </div>
+			    </div>
+			    <div class="slide slide3">
+			      <div class="slide-content">
+			        <span>Image Three</span>
+			      </div>
+			    </div>
+			  </div>
+			  <div id="arrow-right" class="arrow"></div>
+			</div>
+			<script type="text/javascript">
+			  let sliderImages = document.querySelectorAll(".slide"),
+			  arrowLeft = document.querySelector("#arrow-left"),
+			  arrowRight = document.querySelector("#arrow-right"),
+			  current = 0;
+
+			// Clear all images
+			function reset() {
+			  for (let i = 0; i < sliderImages.length; i++) {
+			    sliderImages[i].style.display = "none";
+			  }
+			}
+
+			// Init slider
+			function startSlide() {
+			  reset();
+			  sliderImages[0].style.display = "block";
+			}
+
+			// Show prev
+			function slideLeft() {
+			  reset();
+			  sliderImages[current - 1].style.display = "block";
+			  current--;
+			}
+
+			// Show next
+			function slideRight() {
+			  reset();
+			  sliderImages[current + 1].style.display = "block";
+			  current++;
+			}
+
+			// Left arrow click
+			arrowLeft.addEventListener("click", function() {
+			  if (current === 0) {
+			    current = sliderImages.length;
+			  }
+			  slideLeft();
+			});
+
+			// Right arrow click
+			arrowRight.addEventListener("click", function() {
+			  if (current === sliderImages.length - 1) {
+			    current = -1;
+			  }
+			  slideRight();
+			});
+
+			startSlide();
+			</script>
+
+			<div id="overlay" ><h1>Every Nolan Movie Ranked </h1>
+
+				<img  src="../img/n13.jpg" style="margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 320px;" >
+
+				<p >Just as history is written by the victors, eras of cinema are defined by Goliaths. But the debate over which filmmaker has most influenced the millennial era has lost its question mark—love him or hate him, Christopher Nolan has dominated Hollywood in a way few filmmakers ever do.
+				Nolan, 48, has directed 10 feature films, demonstrating a rare ability to marry blockbuster entertainment with complex, compelling ideas while experimenting with form and function. He’s drawn comparisons to Steven Spielberg for his critically acclaimed popcorn fare, but that’s never felt like a real fit. Spielberg douses his movies in sentiment (that’s a compliment), whereas Nolan’s work has always felt more technical and measured (also a compliment). If Spielberg is the artistic Michelangelo, then Nolan is surely the scientific da Vinci.
+				Today marks the 20th anniversary of Nolan’s feature-length directorial debut, and as we eagerly await his next feature, we’re drawn to his filmography like a pen to paper. There’s so much to unpack in each entry, as he has spent his career crafting introspective mind-benders, redefining the still-developing superhero genre and always testing the limits. He has yet to make a bad movie (though his handling of female characters can be problematic). So to celebrate two decades of fastidious output, we’ve ranked all 10 of Nolan’s films, from the great to the absolute best.
+				</p>
+				<h2>10. The Dark Knight Rises (2012)</h2>
+				<img  src="../img/n1.jpg" style="margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 320px;" >
+
+				<p>The Dark Knight Rises is a potent and occasionally epic conclusion to Nolan’s groundbreaking Batman trilogy. It features another iconic villain (we’ll happily die on the “Tom Hardy’s Bane is great” hill), ambitious action sequences and a very satisfying ending.
+				That said, it is definitely the weakest of the trilogy and Nolan’s most problematic film, which is strange given that it had all of the right pieces in place. Bane’s revolution was rooted in class warfare, a relevant and deep subtext that reflects our country’s state of affairs today. Like the Joker in the masterful The Dark Knight, Bane imposes his ideology on the city of Gotham (property values must be in the toilet), dragging Batman—and, more important, Bruce Wayne—down into the dredges. Yet the movie’s moving parts don’t work in unison to deliver a fully coalesced finale.
+				The film is a bit bloated, carried forth by individual moments of excellence and the franchise’s thundering momentum as a whole. But in rewatching it, you can see how certain carefully laid constructs fail to work as intended, namely the villain twist. The script is pocked with several logical leaps too vast for audiences to make. In the end, Batman passes the masked mantle to another despite Batman Begins driving home the point that it is the world that shapes you into what you are—it isn’t given to you. You can practically hear Nolan’s sigh of relief at being done with the frenzied comic book franchise and once again able to return to his original auteur roots.
+				The Dark Knight Rises is still better than 90 percent of the blockbusters out there—it just doesn’t rise quite as high as Nolan’s other achievements.
+				</p>
+				<h2>9.Following (1998)</h2>
+				<img  src="../img/n2.jpg" style="margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 380px;" >
+
+				<p>Nolan’s directorial debut is a taut and tense noir that hints at what the filmmaker he would later become. Complete with nonlinear narratives, shifting perspectives and time hops, Following lays the groundwork for some of Nolan’s most familiar tendencies.
+				While the plotting, style and patented twist ending all deliver, the movie doesn’t quite match the eerie potential of similar paranoid thrillers such as Darren Aronofsky’s Pi or even Nolan’s own Insomnia. Like some of his other work, there’s a cold detachment from the proceedings. It’s cleverly low-fi in its execution, but somewhat sterile in its feeling.
+				Still, in just 70 minutes, Nolan is able to accomplish what many filmmakers cannot in 120. He also, whether intentionally or not, puts forth a thesis statement for the rest of his career: his obsession with obsession. Perhaps it’s not surprising that such a technically focused and methodical director’s résumé would be so defined by obsession, but it’s genuinely thrilling and nerve-wracking to see it work here in such a downplayed manner. There are rough edges, for sure, and it doesn’t exactly benefit from multiple viewings, but the movie does mark Nolan’s official arrival.
+				Nolan fans today may not recognize the low-budget, low-stakes and self-contained nature of Following, but it’s a good reminder of what quality filmmakers can do when forced to make do with the little they have at their disposal.
+
+				</p>
+				<h2>8.Insomnia (2002)</h2>
+				<img  src="../img/n3.jpg" style="margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 380px;" >
+
+				<p>In some ways, Insomnia feels like the least essential of Nolan’s filmography. That’s likely due to the misfortune of it being sandwiched between Memento, his breakout feature, and Batman Begins, which brought the Caped Crusader back to the multiplex for the first time in eight years and announced Nolan’s transition into the big leagues. The psychological drama gets a bit lost in the upward rush, like a dream before an awakening.
+				Propelled by a leading performance from Al Pacino, Insomnia is more about the idea of right and wrong than it is a murder mystery. It’s an atmospheric endeavor that uses its remote Alaskan setting to creep into your psyche and begin unplugging wires. You can see how it convinced Warner Bros. to give Nolan the character of Batman, a hero who’s split down the middle by morality and sworn to protect the seedy and debilitating Gotham city, which, in a way, serves as its own character. It’s the only film in Nolan’s career that he didn’t have a hand in writing—and that distance is felt in Insomnia‘s more straightforward delivery.
+				Still, it was the movie that proved that Memento wasn’t a fluke and that Nolan was on his way to major stardom in Hollywood. That’s both an indictment and an endorsement of the film’s legacy.
+
+				</p>
+				<h2>7. Batman Begins (2005)</h2>
+				<img  src="../img/n4.jpeg" style="margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 320px;" >
+
+				<p>
+				What Nolan accomplished with 2005’s Batman Begins cannot be overstated. The Caped Crusader was long considered one of the most valuable IPs in all of Hollywood, until Warner Bros. shelved the Dark Knight title for eight long years after the disastrous Batman & Robin tarnished the brand. But redemption, thy name is Nolan.
+				Batman Begins is the greatest superhero origin film of all time, and one of the few Bat-flicks to get Bruce Wayne—the more important persona—right. But it also represented a new approach to comic book filmmaking. Dark, gritty, grounded and realistic, Batman Begins made these movies cool and viable in a way the X-Men and Spider-Man movies before it had not. Suddenly, superheroes weren’t just meant for genre filmmakers.
+				Again, Nolan employs some of his favorite storytelling trickery with temporal gymnastics and layered plotting, which allow the audience to see a man painstakingly built into arguably the most familiar character in the world. All the while, it feels fresh and new and exciting because we’d never seen a Batman so serious and believable. Nolan transformed a well-known hero’s tale into a prestige action adventure (think a more Goth Gladiator) that moviegoers never realized they needed—and in doing so, he put himself on the mainstream map.
+
+				</p>
+				<h2>6. Memento (2001)</h2>
+				<img  src="../img/n5.jpg" style="margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 320px;" >
+
+				<p>
+				Before the director was anointed a nerd god by his undying legion of Nolanites, he was a crafty young filmmaker looking to break in. What better way to do that than by approaching his second feature like a drunken bet with a friend: “Hey Chris, I bet you can’t make an entire movie that runs in reverse order.”
+				Challenge accepted. Memento—in which a man suffers from a rare, untreatable form of memory loss while tracking down his wife’s killer—may be a gimmick, but it’s a gimmick that works. The fact that the film is a dazzling mystery thriller in its own right and not a convoluted mess is astonishing.
+				Memento works once the initial wow factor of watching a reverse story wears off. Opposing character motivations, ulterior motives, betrayal and misery—at its center, Memento is a slickly executed and affecting puzzle that only benefits from its fractured narrative. It’s fiercely original and raises the existentially terrifying question: What defines you if your history is ever-shifting and intangible and can be spun by someone else?
+				An enticing signpost meant to attract eyeballs, Memento is the film that turned many on to Nolan. There’s something undeniably exciting about “discovering” a new talent with all the potential in the world. A parallel to today might be the buzz Alex Garland generated with his directorial debut, 2015’s Ex Machina. After Memento, the film industry collectively earmarked Nolan as a man to watch.
+
+				</p>
+				<h2>5.Dunkirk (2017)</h2>
+				<img  src="../img/n6.jpg" style="margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 380px;" >
+
+				<p>
+				Half masterpiece, half gimmick, Dunkirk is a feat of technical wizardry that represents the art of filmmaking at its finest and most innovative. Visually and audibly, Nolan gives audiences something they’ve never seen before in theaters as his raw craftsmanship reaches new heights. Dunkirk isn’t so much a movie as it is a visceral experience that needs to be felt and processed. The chaos and fear of war has never felt so real—here, it is built on intensity, shuddering fear and blunt-force impact. It doesn’t place you in the center of the horror quite like Spielberg’s Saving Private Ryan does, but it comes pretty damn close.
+				Even so, Dunkirk‘s turn-offs are so glaring that one could be forgiven for hating the experience. Many were understandably not in love with the film’s intentional lack of cohesion. Its staggered and divided plot structure come across as an unnecessary sleight of hand, like an empty trick meant to impress in its complexity. There’s also a lack of character development—its few stars serve the movie’s function rather than capture your empathy.
+				Dunkirk felt like Nolan purposefully making a World War II movie because he knew it would appeal to the Academy. Like Spielberg before him, it seems he saw this as his opportunity to be taken seriously by the upper echelon of Hollywood, to be seen as more than a fantastic popcorn filmmaker (why should the two be mutually exclusive?).
+				Whatever the motivation behind Dunkirk, it was still one of the most memorable films of 2017.
+
+				</p>
+				<h2>4. The Prestige (2006)</h2>
+				<img  src="../img/n7.jpg" style="margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 380px;" >
+
+				<p>
+				A surprise? Maybe, but The Prestige is Nolan’s most complete film start to finish. It is when the filmmaker perfected his thematic propensity for obsession, unfurling the naturally tragic conclusion to a story of two rival magicians trapped by their own undying need to best one another.
+				The Prestige has all of your favorite Nolanisms, from nonlinear narratives and unreliable narrators to a mysterious sci-fi slant and purposeful misdirection. It also has David Bowie, which immediately improves everything by a minimum of 25 percent.
+				Though divisive among fans and critics, The Prestige is Nolan’s most excellent work in that it’s a picture that demands your attention and then earns that focus. The first time around, it’s a mind-bending puzzle; the second time through, you’re looking for the tricks and still not finding them all; the third time through, an intricately crafted masterpiece begins to take shape. The Prestige begs for repeat viewings like The Usual Suspects on steroids.
+				“Man’s reach exceeds his imagination,” Hugh Jackman’s Robert Angier exclaims in the movie. Yet here, imagination is directed inward and let loose to run wild and devour the soul. The third-act reveal may prove too straightforward for some, but its brilliance lies in its simplicity. As we desperately try to outthink the characters, the obvious answer to one of the film’s most glaring mysteries is sitting right out in the open.
+				The Prestige arrived in between Batman Begins and The Dark Knight, proving to be a letdown to those hoping for a similarly dense and action-packed blockbuster. But the movie marks a stepping stone in Nolan’s filmography, a refinement of his most common leanings and imaginative concoctions. It is a well-rounded and efficient story that successfully contorts itself into a twist on the traditional three-act movie. The fact that it’s so polarizing only enhances its appeal.
+				</p>
+				
+				<h2>3. The Dark Knight (2008)</h2>
+				<img  src="../img/n8.jpg" style="margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 380px;" >
+
+				
+				<p>
+				And thus a legend was born.
+				The Dark Knight is a masterpiece, a comic book movie feted for its sensible approach to admittedly wacky material and its boots-on-the-ground vibe—it feels as if it were written by James Cameron and filmed by Ridley Scott. If Batman Begins was The Sopranos, an early innovator that redefined the genre, then The Dark Knight is Breaking Bad, a perfected version of the formula that grew into a deservingly monster hit.
+				It’s blasphemous to say for some, but Nolan topped Tim Burton’s proudly weird and lovely first two Batman pictures by churning out a thinking man’s superhero picture that meditates on the Iraq war, anarchism and dual identity. It is the rare summer blockbuster that builds on philosophical debate without ever crossing over into preachy conversion territory. Without The Dark Knight, we’d have never gotten Logan (or the host of pretenders that tried and failed to match TDK‘s gritty realism).
+				And then there’s Heath Ledger’s immortal performance as The Joker. Due to his tragic death, Ledger’s turn as the Clown Prince of Crime has taken on a near-mythic status, but the truth is that his portrayal would have been equally revered regardless. The Dark Knight is very much The Joker’s movie, as it peaks every time he’s on screen. The best scenes feature him prominently, and the most quotable lines slither from his mouth. He elevates the material and provides the movie with a defining attribute that remains unparalleled in the genre.
+				Who knows what’s to come in Nolan’s career, but The Dark Knight is what he’ll be remembered for most.
+
+				</p>
+				<h2>2. Interstellar</h2>
+				<img  src="../img/n10.jpg" style="margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 320px;" >
+
+				<p>
+
+				Interstellar is up there with Dunkirk as one of Nolan’s most polarizing films; you’re either accepting of the places he’s asking you to go or unwilling to hop on board. Either way, at least the man is going for it—you’ll find no sanded edges here. Inception is probably better in a vacuum and contains fewer glaring flaws, but the Anne Hathaway-Matthew McConaughey-Jessica Chastain sci-fi epic feels more memorable in the long run.
+				Interstellar both works and doesn’t. It telegraphs its biggest reveal yet boldly goes beyond your expectations. It is both unintentionally hilarious (“MUUUUURPH!”) and unapologetically sophisticated. Its plot holes are as gigantic as the endless vastness of space where it takes place, and yet it may weirdly be Nolan’s most personal and intimate feature.
+				Some left the theater feeling as if Interstellar was good, but missed its mark. But time has served it well. Like Dunkirk, it’s an environmental feat that needed to be first experienced in an IMAX setting. But unlike Dunkirk, it has great re-watchability as you discover what is essentially Nolan’s love letter to his children wrapped up in sci-fi blockbuster trappings. Its first-half depiction of the decline of humanity is thoughtfully juxtaposed with the second-half’s clawing for survival. Each viewing reveals subtle new details.
+
+
+				In Interstellar (2014) on the water planet, the soundtrack in the background has a prominent ticking noise. These ticks happen every 1.25 seconds. Each tick you hear is a whole day passing on Earth
+
+				When it comes to tackling the mysteries of the universe, Interstellar may not quite pull off what it intended to—I still can’t explain that fucking bookcase—but it remains thought-provoking and grandiose in a way few mainstream biggies are. It does not compromise itself to be more commercially digestible. Unsurprisingly, it holds the honorable distinction of being Nolan’s lowest-rated film on Rotten Tomatoes (71 percent), which makes it the perfect entry on his résumé to endlessly debate.
+				</p>
+
+				<h2>1. Inception</h2>
+				<img  src="../img/n9.jpg" style="margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 320px;" >
+
+				<p>
+				An A-list marquee movie star teaming up with one of the hottest directors in the business for a high-concept sci-fi blockbuster is the perfect recipe for box office success. Raking in more than $828 million worldwide, Inception remains Nolan’s highest-grossing non-Batman picture. One part Matrix, one part Vanilla Sky and one part James Bond, the film invites rabid speculation and theorizing while delivering top-notch action through supremely effective practical stunts. That zero-gravity hallway fight scene is worthy of its own deep-dive alone.
+				Inception is the perfect blend of innovative storytelling and mainstream sensibilities. More important, it cemented Nolan as a prestige blockbuster filmmaker. After the Academy opened up the field for more Best Picture nominees following The Dark Knight‘s snubbing, Inception claimed a nod at the 2011 Oscars, reminding folks that popularity does not make a movie less awards-worthy than a little-seen art house film.
+				That’s not to say it’s flawless—at times, Inception can get lost in its own dream-within-a-dream-within-a-dream. But the sheer imagination needed to power such a vision is impressive and ensnaring. In a Hollywood era dominated by franchises and reboots—a culture Nolan contributed to—a big-budget original idea like this is rare. The fact that it succeeded, while maintaining Nolan’s affinity for obsessed protagonists, was healthy for Hollywood and good for audiences who aren’t interested in the fourth iteration of some major superhero.
+				Few filmmakers are coupling cerebral stories with such entertaining fare. That’s a feat Inception pulls off with relative ease.
+
+</p>
+
+			</div>
+			<div id="related articles">
+			
+			</div>
+
+	</body>
+</html>

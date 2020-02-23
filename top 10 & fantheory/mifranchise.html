@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="mifranchise.css">
+
+
+	</head>
+	<body>
+		<div>
+					<ul>
+					  <li><img src="../img/logo.jpg" style="height: 5vh"></li>
+					  <li><a class="active" href="../index.html">Home</a></li>
+					  <li><a href="../reviewpages/reviewshome.html">Reviews</a></li>
+					  <li><a href="../">Top 10's</a></li>
+					  <li><a href="../contact/contact.html">Contact Us</a></li>
+					  <li style="float: right;margin-right: 2vw;"><a href="../login/login.html">Log In</a></li>
+					</ul>
+		</div>			
+			<div class="wrap">
+			  <div id="arrow-left" class="arrow"></div>
+			  <div id="slider">
+			    <div class="slide slide1">
+			      <div class="slide-content">
+			        <span>Image One</span>
+			      </div>
+			    </div>
+			    <div class="slide slide2">
+			      <div class="slide-content">
+			        <span>Image Two</span>
+			      </div>
+			    </div>
+			    <div class="slide slide3">
+			      <div class="slide-content">
+			        <span>Image Three</span>
+			      </div>
+			    </div>
+			  </div>
+			  <div id="arrow-right" class="arrow"></div>
+			</div>
+			<script type="text/javascript">
+			  let sliderImages = document.querySelectorAll(".slide"),
+			  arrowLeft = document.querySelector("#arrow-left"),
+			  arrowRight = document.querySelector("#arrow-right"),
+			  current = 0;
+
+			// Clear all images
+			function reset() {
+			  for (let i = 0; i < sliderImages.length; i++) {
+			    sliderImages[i].style.display = "none";
+			  }
+			}
+
+			// Init slider
+			function startSlide() {
+			  reset();
+			  sliderImages[0].style.display = "block";
+			}
+
+			// Show prev
+			function slideLeft() {
+			  reset();
+			  sliderImages[current - 1].style.display = "block";
+			  current--;
+			}
+
+			// Show next
+			function slideRight() {
+			  reset();
+			  sliderImages[current + 1].style.display = "block";
+			  current++;
+			}
+
+			// Left arrow click
+			arrowLeft.addEventListener("click", function() {
+			  if (current === 0) {
+			    current = sliderImages.length;
+			  }
+			  slideLeft();
+			});
+
+			// Right arrow click
+			arrowRight.addEventListener("click", function() {
+			  if (current === sliderImages.length - 1) {
+			    current = -1;
+			  }
+			  slideRight();
+			});
+
+			startSlide();
+			</script>
+
+			<div id="overlay" ><h1 style="padding: 12px"> Mission impossible rankings </h1>
+				<img  src="../img/mi9.jpg" 
+				style="margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 320px;	">
+				<p >Few actors have been sustained by a single ongoing franchise more than Tom Cruise, and the hype surrounding “Mission Impossible: Fallout” proves that more than two decades after the former ‘60s spy show became a blockbuster, the formula remains as potent than ever. It helps that the “Mission: Impossible” movies never really faltered — with six movies to date, there’s not a dud in the bunch — which makes the challenge of ranking them especially tricky. Nevertheless, there’s much to explore in revisiting the various entries of this series, which includes the work of world-class auteurs and memorable stunts that make it a wonder Cruise has survived this long. Here’s hoping he lives through a few more installments. In the meantime, our ranking follows.
+				</p>
+				<h2>6. “Mission: Impossible II” (2000)</h2>
+				<img  src="../img/mi2.jpeg" 
+				style="margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 320px;	">
+
+				<p>One way to put in a pin a potentially viable franchise is to do whatever the hell it was that John Woo did for his 2000 entry into the series, a mishmash of early aughts action film tropes, from rogue viruses to something involving evil stock options — in short, a big stew of boring narrative ideas executed poorly. At least there’s Thandie Newton, cool as a cucumber and dangerous as any other double-crossing career criminal the “M:I” movies has lavished attention on before discarding by the time the next movie comes along. She’s the most Bond Girl-esque among Ethan’s love interests, but she’s also a genuinely interesting character: a thief turned spy who has a good heart and a better poker face, though all that is pushed aside to set her up as a love interest for Ethan, one we will never, ever see again. The film isn’t entirely without a few other merits, of course, and a motorcycle chase involving Ethan and Dougray Scott as the evil Ambrose is a Woo classic (light on the doves, though), though it would eventually get bested by another “M:I” film anyway (“Rogue Nation”). The same is true about the film’s opening stunt, which sees Ethan dangling off a massive rock wall (for…fun?), another nutty sequence that was very cool at the time, and then rendered moot by a franchise hellbent on making every film bigger and crazier, even if it involves making earlier stunts look paltry by comparison (in this case, the Burj Khalifa climb in “Ghost Protocol,” still one of the best things to happen in any action movie of the last decade). —KE
+				</p>
+				
+				<h2>5. “Mission Impossible — Ghost Protocol” (2011)</h2>
+				<img  src="../img/mi5.jpg" 
+				style="margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 320px;	">
+
+				<p>
+				J.J. Abrams brought the “Mission: Impossible” franchise closer to Bond territory with the third installment, but it’s really Brad Bird who proved once and for all what a “Mission Impossible” movie can be with “Ghost Protocol.” Bird, the master animator behind “The Iron Giant” and “The Incredibles,” made his live-action filmmaking debut on the sequel, and used his animator’s brain to turn the series’ already famous action set pieces into true works of art. A hand-to-hand fight between Lea Seydoux and Paula Patton has the feel of an action ballet, while Tom Cruise’s iconic scaling of the Burj Khalifa has a building tension that erupts in staccato bursts of adrenaline. Bird’s action scenes are their own symphonies, each with a distinct melody and a breathless climax. Bird’s film is the “Mission Impossible” franchise as a series of one-upping, expertly realized action scenes, and that’s the franchise at its best (see “Fallout,” below). 
+				</p>
+
+				<h2>4. “Mission: Impossible III” (2006)</h2>
+				<img  src="../img/mi3.jpg" 
+				style="margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 320px;	">
+
+				<p>
+				Of all the commercial auteurs working today, J.J. Abrams has the rare distinction of launching his feature film career with a blockbuster. The superpower TV producer already had hit shows like “Alias” and “Lost” under his belt when he directed “MI: III,” and that background shows in one of the tighter, plot-driven entries in the franchise — the first one to put more of an effort into developing Ethan Hunt as a character. The actual plot involves some MacGuffin nonsense about a device called “The Rabbit’s Foot,” but it matters a lot less than Hunt’s newfound achilles’ heel: his wife, Julia Meade (Michelle Monaghan), whose relevance to Hunt’s decision-making continues to reverberate through the series.
+				The final showdown involves a clever variation on the taut bomb-defusing scenario that had already become cliché for these movies, and no amount of Tom Cruise running gives many of the action sequences much distinction. Fortunately, he’s not the real star of the show. That distinction belongs to Philip Seymour Hoffman as arms dealer Owen Davian, still the best villain these movies have offered up. Davian is a cold-blooded mad man whose relentlessly calm demeanor brings an eerie realism to a role that could have called for a simple cardboard baddie; when Hunt dangles the character out of a plane in a vain attempt to make Davian talk, Hoffman’s dead-eyed stare into the howling wind gives the “Mission: Impossible” movies their most indelible image since that bead of sweat crept down Cruise’s brow. 
+
+				</p>
+				<h2>3. “Mission: Impossible” (1996)</h2>
+				<img  src="../img/mi1.jpg" 
+				style="margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 320px;	">
+
+				<p>
+				It’s the image most closely associated with the first era of the “M:I” franchise: A close-cropped, bespectacled Ethan Hunt hangs mere inches above a floor best described as “not really suitable to be a floor anyway,” attempting to hack a computer by way of some massive floppy discs. He’s all nerves and fear and tension … and then he sweats, one droplet ready to burst on to that same floor, alerting everyone to his presence — and then he catches it. It’s funny and bold and clever, and while relatively small-scale compared to the set pieces to come, it’s still one that’s emblematic of the best of the series.
+				But, really, it’s not even the best sequence in the film itself. Brian De Palma’s elegant thriller opens with the most amusing bit to play out in any “M:I” film, a fancy piece of misdirection that introduces not only Ethan Hunt, but his stacked cast of compatriots, including Kristin Scott Thomas and Emilio Estevez — and then kills them all off, in order to dig into a story of double-crossing that any spy series would love to have among its ranks. It will become a familiar story beat: Ethan with his back up against the wall, having to prove his loyalty to an institution that doesn’t totally deserve it. The film ends with one of those deeply entertaining, highly improbable action set pieces that the franchise has perfected as its signature: a race between a train (with Cruise on top) and a helicopter (piloted by main baddie Jean Reno), which makes its way through a tunnel. Sure! It’s as bonkers as anything the series has crafted since, and it set the stage for all the madness to come. 
+
+
+				</p>
+				<h2>2. “Mission: Impossible — Rogue Nation” (2015)</h2>
+				<img  src="../img/mi10.jpg" 
+				style="margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 320px;	">
+
+				<p>
+				“Rogue Nation” is a standout entry for one main reason: Rebecca Ferguson. The Swedish actress’ breakout performance as undercover MI6 agent Isla Faust gave the franchise a hugely refreshing female voice, one that goes toe-to-toe with Tom Cruise in terms of kicking ass and magnetic screen charisma. Ferguson was a breathe of fresh air five films into the “Mission: Impossible” franchise, as was writer-director Christopher McQuarrie. McQuarrie’s approach results in the most tightly constructed entry in the franchise, which makes “Rogue Nation” a refreshing blast that doesn’t quite reach the unpredictable thrills of the best “Mission: Impossible” movies. In his hands, “Mission: Impossible” went more old-fashioned. McQuarrie replaced Bird’s cartoonishness with a more classical approach that recalled everything from Alfred Hitchcock to James Bond. The entry also gets bonus points for its opera fist fight scene, which remains one of the best set pieces in the franchise. 
+				</p>
+				
+				<h2>1. “Mission: Impossible — Fallout” (2018)</h2>
+				<img  src="../img/mi8.jpg" 
+				style="margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 320px;	">
+				<p>
+				It doesn’t take long to recognize that “Mission: Impossible — Fallout” is one of the best action movies ever made. Some will see the light during the first act HALO jump, when Tom Cruise caps off an exhilarating long-take by leaping out of a C-17 at 25,000 feet, aerial photographer Craig O’Brien capturing the stunt through the IMAX lens strapped to his head (your move, Christopher Nolan). Others might cotton to the film’s brilliance during the bareknuckle fight scene that follows in the bathroom of a Parisian nightclub. Henry Cavill packs so much firepower into each punch that he literally has to reload his arms, and director Christopher McQuarrie — invoking the best of James Bond as he shoots the brawl without any music on the soundtrack — makes sure that we absorb every bodyblow and wince at each piece of busted tile.
+				But the true genius of the latest (and possibly last) chapter in the long-running “Mission: Impossible” saga isn’t found in one of the film’s death-defying set pieces, or in the elegant way that McQuarrie strings them together like perfect little pearls of violence, or even in the moment when Angela Bassett deadpans some ridiculous line about stolen plutonium with a stoic fury worthy of King Lear. “Fallout” is great because it fulfills a promise that its star made to moviegoers back in the last millennium, and — with only a handful of exceptions — hasn’t reneged on since. It’s a promise that’s made him the last movie star of his kind, a one-man supernova who’s yet to burn out a time when audiences only seem to care about brands. And it’s a promise that Tom Cruise finally voices out loud in the sixth installment of the series that he’s sustained for 22 years, and has sustained him in return for at least the last seven: “I won’t let you down.”
+				</p>
+				
+
+			</div>
+			<div id="related articles">
+			
+			</div>
+
+	</body>
+</html>

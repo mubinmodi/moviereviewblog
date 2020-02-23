@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="bond.css">
+		
+
+	</head>
+
+<body>
+		<div>
+					<ul>
+					  <li><img src="../img/logo.jpg" style="height: 5vh"></li>
+					  <li><a class="active" href="../index.html">Home</a></li>
+					  <li><a href="../reviewpages/reviewshome.html">Reviews</a></li>
+					  <li><a href="../">Top 10's</a></li>
+					  <li><a href="../contact/contact.html">Contact Us</a></li>
+					  <li style="float: right;margin-right: 2vw;"><a href="../login/login.html">Log In</a></li>
+					</ul>
+		</div>			
+			<div class="wrap">
+			  <div id="arrow-left" class="arrow"></div>
+			  <div id="slider">
+			    <div class="slide slide1">
+			      <div class="slide-content">
+			        <span>Image One</span>
+			      </div>
+			    </div>
+			    <div class="slide slide2">
+			      <div class="slide-content">
+			        <span>Image Two</span>
+			      </div>
+			    </div>
+			    <div class="slide slide3">
+			      <div class="slide-content">
+			        <span>Image Three</span>
+			      </div>
+			    </div>
+			  </div>
+			  <div id="arrow-right" class="arrow"></div>
+			</div>
+			<script type="text/javascript">
+			  let sliderImages = document.querySelectorAll(".slide"),
+			  arrowLeft = document.querySelector("#arrow-left"),
+			  arrowRight = document.querySelector("#arrow-right"),
+			  current = 0;
+
+			// Clear all images
+			function reset() {
+			  for (let i = 0; i < sliderImages.length; i++) {
+			    sliderImages[i].style.display = "none";
+			  }
+			}
+
+			// Init slider
+			function startSlide() {
+			  reset();
+			  sliderImages[0].style.display = "block";
+			}
+
+			// Show prev
+			function slideLeft() {
+			  reset();
+			  sliderImages[current - 1].style.display = "block";
+			  current--;
+			}
+
+			// Show next
+			function slideRight() {
+			  reset();
+			  sliderImages[current + 1].style.display = "block";
+			  current++;
+			}
+
+			// Left arrow click
+			arrowLeft.addEventListener("click", function() {
+			  if (current === 0) {
+			    current = sliderImages.length;
+			  }
+			  slideLeft();
+			});
+
+			// Right arrow click
+			arrowRight.addEventListener("click", function() {
+			  if (current === sliderImages.length - 1) {
+			    current = -1;
+			  }
+			  slideRight();
+			});
+
+			startSlide();
+			</script>
+
+			<div id="overlay">
+				<h1> Daniel Craig's bond rankings</h1>
+
+				<h2>4. Quantum of Solace</h2>
+				<img  src="../img/bond2.jpg" 
+				style="margin-left: 250px; direction: flex;    max-height: 350px;max-width: 450px;width: 450px;height: 350px;" >
+
+				<p>Quantum of Solace is largely considered to be the weakest Craig Bond film. It is a messy continuation of a story that is done so well in his first outing, Casino Royale, making it feel like an unnecessary direct sequel. Certain moments of action may be stellar, such as the opening car chase scene and the parkour foot chase that occurs not long after. But, on the whole, the film meanders. The plot has a lot to do with the mysterious Mr. White, although he only shows up in two scenes. And the main villain, played fairly well by Mathieu Almaric, is largely forgettable. It is also one of the shortest Bond installments at a cool 106 minutes, although it feels like the franchise’s standard run time. Overall, Quantum of Solace is unfortunately book-ended by great Bond installments that completely overshadow it.
+				</p>
+				
+				<h2>3. Spectre</h2>
+				
+				<img  src="../img/bond5.jpg" 
+				style="margin-left: 250px; direction: flex;max-height: 300px; max-width:700px; width: 720px; height: 300px;	" >
+
+				<p>The new installment to the James Bond franchise, without giving much away in the spoiler department, is a throwback to classic Bond. Still, there is an attempt to maintain the gritty Craig Bond that has been established over the course of the four films. This blend doesn’t work very well. In short, Eon can’t have the best of both worlds, and this film is the evidence of that. Christoph Waltz has the opportunity to play a great Bond villain, but he is barely in the film. The action is extravagant and to the nines, but it doesn’t move to a satisfying narrative end. The plot goes to great lengths to set particular points up, at the expense of losing a cohesive whole. And the previously mentioned blend of old and new makes Craig’s Bond detract from what the character was set up to be in the earlier films. This is perhaps most disappointing, and it makes the film feel like a better launching pad for a new bond actor than a closing film for Craig.
+				</p>
+
+				
+				<h2>2. Skyfall</h2>
+				<img  src="../img/bond3.jpg" style="margin-left: 250px; direction: flex; max-height: 400px; max-width: 600px; width: 620px;  height: 420px;	" >
+
+				<p>
+				Skyfall is an interesting take on the Bond formula, in that it breaks it in some key places. The film brings Bond back to his home. It also brings M (Judi Dench) into the forefront by making her a direct target of the villain Silva, who is played delightfully sadistic by Javier Bardem. This brings the relationship between Bond and M into a new territory that is novel to the franchise in a way that is beneficial. The film is also shot beautifully, making all of the action set pieces all the more visually appealing. It stumbles only in its length, where certain sequences are drawn out far past their necessity. Otherwise, it is easily a top-ten Bond film.
+				</p>
+				<h2>1. Casino Royale</h2>
+				<img  src="../img/bond8.jpeg" style="margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 320px;" >
+
+				<p>
+				Casino Royale is the quintessential Craig Bond film. It set up his character as something fresh and new. It is stylish, well-crafted, and intense up to its final explosive act. Eva Green plays perhaps the greatest, most well-developed Bond girl character in the franchise, Vesper Lynd. Mads Mikkelsen is a wonderfully quiet villain with a bleeding eye, and his demise is merciless and abrupt, as opposed to some of the more grandiose foe falls in the franchise that come off too campy. Not to mention the torture scene between Mikkelsen’s Le Chiffre and Bond is one of the most intense scenes in the series. Casino Royale is, simply put, the perfect introduction of a new Bond actor. It also wouldn’t be hard to argue that Casino Royale is the best Bond film in the entire franchise.
+			    </p>
+			</div>
+		
+</body>
+</html>

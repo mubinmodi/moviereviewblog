@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="johnwick_review.css">
+	
+	<style>
+	.circle {
+	  height: 100px;
+	  width: 100px;
+	  background-color: #555;
+	  border-radius: 50%;
+	  display: flex;
+	}
+	.circle h5{
+		margin: auto;
+	}
+	.proscons{
+		display: flex;
+		padding: 2vw;
+	}
+	.proscons li{
+		margin: 1vw;
+		margin-left: 2vw;
+	}
+	.pros,.cons{
+		margin: 0 5vw;
+	}
+	.proscons ul{
+		padding: 0 20px;
+		list-style-type: circle;
+	}
+</style>
+</head>
+<body>
+<div>
+		<ul>
+		  <li><img src="../img/logo.jpg" style="height: 5vh"></li>
+		  <li><a class="active" href="../index.html">Home</a></li>
+		  <li><a href="../reviewpages/reviewshome.html">Reviews</a></li>
+		  <li><a href="../">Top 10's</a></li>
+		  <li><a href="../contact/contact.html">Contact Us</a></li>
+		  <li style="float: right;margin-right: 2vw;"><a href="../login/login.html">Log In</a></li>
+		</ul>
+<div class="wrap">
+  <div id="arrow-left" class="arrow"></div>
+  <div id="slider">
+    <div class="slide slide1">
+      <div class="slide-content">
+        <span>Image One</span>
+      </div>
+    </div>
+    <div class="slide slide2">
+      <div class="slide-content">
+        <span>Image Two</span>
+      </div>
+    </div>
+    <div class="slide slide3">
+      <div class="slide-content">
+        <span>Image Three</span>
+      </div>
+    </div>
+  </div>
+  <div id="arrow-right" class="arrow"></div>
+</div>
+<script type="text/javascript">
+  let sliderImages = document.querySelectorAll(".slide"),
+  arrowLeft = document.querySelector("#arrow-left"),
+  arrowRight = document.querySelector("#arrow-right"),
+  current = 0;
+
+// Clear all images
+function reset() {
+  for (let i = 0; i < sliderImages.length; i++) {
+    sliderImages[i].style.display = "none";
+  }
+}
+
+// Init slider
+function startSlide() {
+  reset();
+  sliderImages[0].style.display = "block";
+}
+
+// Show prev
+function slideLeft() {
+  reset();
+  sliderImages[current - 1].style.display = "block";
+  current--;
+}
+
+// Show next
+function slideRight() {
+  reset();
+  sliderImages[current + 1].style.display = "block";
+  current++;
+}
+
+// Left arrow click
+arrowLeft.addEventListener("click", function() {
+  if (current === 0) {
+    current = sliderImages.length;
+  }
+  slideLeft();
+});
+
+// Right arrow click
+arrowRight.addEventListener("click", function() {
+  if (current === sliderImages.length - 1) {
+    current = -1;
+  }
+  slideRight();
+});
+
+startSlide();
+</script>
+</div>
+<div id="overlay" ><h1> JOHN WICK 3 :REVIEW </h1>
+
+	<p>“John Wick: Chapter 3 - Parabellum brings the title character back to his roots while also offering new twists to where things could go from here, all with the over-the-top, brutally executed action set-pieces fans have come to expect from the franchise. They will not leave disappointed.
+	</p><p>
+
+
+		Picking up moments after the end of John Wick: Chapter 2, Parabellum takes place over the course of a few very bloody, desperate days as John faces the proverbial music for breaking the rules of the High Table in the preceding film. His breathless journey to stay alive — and hopefully find a way to set things right with the High Table — will take him through dingy back alleys, arcane buildings, exotic overseas interludes, and finally back to ... well, you’ll see.
+	</p><p>
+
+
+		We learn much more of John’s backstory here, which reveals some interesting facets to his character, all while also seeing him take one helluva prolonged beating along the way. John Wick is a human piñata at this point and Chapter 3 gets a lot of traction out of seeing him punched, stabbed, kicked, shot, and tossed around. John Wick might be the toughest guy ever, not just because he can kill like no one else, but because he can take a beating and keep getting back up until he wins. He’s like the Rocky Balboa of vengeful hitmen.
+	</p><p>
+
+		Keanu Reeves once again owns the screen as this most sympathetic of good bad men, providing another emotionally restrained performance even while clearly giving it his all physically. And does he — and this movie — ever deliver in the action department! Chapter 3 offers a relentless onslaught of action set-pieces, each one as bloody brilliant as the one that came before it. There’s nothing John — or his opponents, for that matter — can’t use to kill someone here: bare hands, guns, swords, books, belts, knives, animals, gravity. There are a million ways to die in this movie, all of them executed in the most visceral, “did they really just do that?!” fashion that fans have come to expect. Each action set-piece builds upon the ridiculous brutality of the previous one, but there’s one particular sequence in Casablanca that some gamers may especially get a kick out of for its elaborate staging and immersiveness.
+	</p><p>
+
+		In addition to the insane action, one thing lovers of the John Wick franchise also appreciate is its very cool and detailed lore, and Chapter 3 doesn’t disappoint there either. The arcane rules, methodical procedures, and old school tech — along with banal business terms like “Adjudicator” being made to sound all dark and cool — push the franchise even further into mythological hyper-reality. Anachronisms don’t really exist in the world of John Wick, one where the armaments are often state of the art but pneumatic tube bureaucracy, ancient coins, and physical media all still serve a vital function.
+	</p><p>
+
+		That said, John Wick: Chapter 3 does get a bit lost in the weeds at times as it’s so intrigued by its own myth-making and world-building that it ultimately calls into question what its own point is when major decisions are undone or whole sections are rendered moot just a few scenes later.
+	</p><p>
+
+		Beyond the title character, John Wick: Chapter 3 also brings back fan faves like amoral Continental Hotel boss Winston (the always droll Ian McShane), the proud but pragmatic Bowery King (a scenery-chewing Laurence Fishburme), and the loyal, resolute Continental concierge Charon (Lance Reddick, who gets to be more badass than ever here), while also introducing several new characters who each make an impact in their own way.
+	</p><p>
+
+		The most notable of these new characters is Halle Berry’s Sofia, John’s past frenemy Berry delivers a crowd-pleasing turn marked by brutal efficiency in her action scenes and a world-weary reluctance in her seriocomic exchanges with Reeves. That said, this film is most definitely not a buddy pic as Berry is not in it as much as some might hope.
+	</p><p>
+
+		Meanwhile, Anjelica Huston joyfully embraces the inherently operatic, even campy nature of the Russian operative who knows John Wick far better than most (not that it means she loves him more than staying alive). Jerome Flynn (aka Game of Thrones’ Bronn) has a small but key role as does Wonder Woman’s Said Taghmaou as an enigmatic source John seeks out for help, but the biggest scene-stealer is Marc Dacascos as Zero, the main assassin in Chapter 3. John Wick has become such an underworld legend that he has fans, Zero among them, which lends Dacascos’ scenes some refreshing moments of levity amidst all the carnage.
+	</p><p>
+
+		All of these newcomers up the ante in the action and lore-building departments as John Wick: Chapter 3 - Parabellum aims to shed new light on who John Wick the man is even as the film established new dilemmas for the franchise to explore down the line.
+	</p><p>
+
+		Verdict
+		Chock full of inventive set-pieces and brutal kills, while also providing new facets to the intricate underworld lore fans of the franchise have come to enjoy, John Wick: Chapter 3 - Parabellum pushes its title character to his breaking point and back while offering fresh information about his backstory. The action is bloody and over-the-top and the emotional throughline remains solid as we follow John Wick on his journey to either save his skin or die trying.
+
+	</p>
+</div>
+<div id="article-review">
+	<h1 style="margin-bottom: 0;">Verdict</h1>
+	<div class="proscons">
+		<div class="pros">
+			<h2>Pros</h2>
+			<ul>
+				<li>In his two Batman movies, Nolan has freed the character</li>
+				<li>In his two Batman movies, Nolan has freed the character</li>
+				<li>In his two Batman movies, Nolan has freed the character</li>
+				<li>In his two Batman movies, Nolan has freed the character</li>
+			</ul>
+		</div>
+		<div class="cons">
+			<h2>Cons</h2>
+			<ul>
+				<li>In his two Batman movies, Nolan has freed the character</li>
+				<li>In his two Batman movies, Nolan has freed the character</li>
+				<li>In his two Batman movies, Nolan has freed the character</li>
+				<li>In his two Batman movies, Nolan has freed the character</li>
+			</ul>
+		</div>
+
+	</div>
+	<div>
+	
+		<div id="header">
+			<h1 style="text-align: center; margin: 22px;">Score</h1>
+		</div>
+	
+		<div id="ratingcard">
+		<div id="rating" style="margin: 0 11%">
+			<div class="circle">
+				<h5>9/10</h5>	
+			</div>
+			<h3 style="margin: 5px 21px;">Imdb Rating</h3>
+		</div>
+			
+		<div id="rating" style="margin: 0 11%">
+			<div class="circle">
+				<h5>98%</h5>	
+			</div>
+			<h3 style="margin: 5px 21px;">Rotten <br> Tomatoes Rating</h3>
+		</div>
+		<div id="rating" style="margin: 0 11%">
+			<div class="circle">
+				<h5>9.8/10</h5>
+			</div>
+			<h3 style="margin: 5px 21px;">Mera Rating</h3>
+		</div>
+		</div>
+		<div>
+			<div id="Pros"> 
+
+			</div>
+			<div id="Cons"> 
+			</div>
+		</div>
+
+	</div>
+</div>
+<div id="related articles">
+	
+</div>
+</body>
+</html>

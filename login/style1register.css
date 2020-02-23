@@ -1,0 +1,108 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-image:url("../img/login-back-image1.jpg") ;
+    background-size:cover;
+}
+#main-wrapper
+{
+    width:340px;
+    height:500px;
+    background-color:#1C2331;
+    top:50%;
+    left:50%; 
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius:15px;
+
+}
+#main-wrapper img{
+    height:100px;
+    width:100px;
+    border-radius: 50px;
+    position: absolute;
+    top:-50px;
+    left:  115px;
+}
+
+#main-wrapper h1 {
+    margin:0px;
+    padding: 0 0 20px;
+    font-size: 22px;
+    text-align: center;
+    color:white;
+}
+
+
+
+.mylabel{
+    margin:0px;
+    padding: 0px;
+    font-weight: bold;
+    color:white;
+}
+
+
+#main-wrapper input{
+    width:100%;
+    margin-bottom:20px;
+}
+.inputvalue {
+    border:none;
+    border-bottom: 1px solid black;
+    background:transparent;
+    outline:none;
+    height:40px;
+    color:rgb(245, 245, 255);
+    font-size: 16px;
+}
+#signup-btn
+{
+    border:none;
+    outline:none;
+    height:40px;
+    background: black;
+    color:white;
+    border-radius: 20px;
+    font-size:18px;
+    
+}
+
+
+#signup-btn:hover
+{
+    cursor:pointer;
+    background: grey;
+}
+
+
+.inputvalue  ::placeholder{
+    color:rgb(101, 101, 109);
+}
+
+.mylabel{
+    margin:0px;
+    padding: 0px;
+    font-weight: bold;
+    color:white;
+    
+}
+
+#back-btn{
+    border:none;
+    outline:none;
+    height:40px;
+    background: black;
+    color:white;
+    border-radius: 20px;
+    font-size:18px;
+
+}
+#back-btn:hover
+{
+    cursor:pointer;
+    background: grey;
+    
+}

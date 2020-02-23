@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="harrypotter.css">
+		
+
+	</head>
+	<body>
+		<div>
+					<ul>
+					  <li><img src="../img/logo.jpg" style="height: 5vh"></li>
+					  <li><a class="active" href="../index.html">Home</a></li>
+					  <li><a href="../reviewpages/reviewshome.html">Reviews</a></li>
+					  <li><a href="../">Top 10's</a></li>
+					  <li><a href="../contact/contact.html">Contact Us</a></li>
+					  <li style="float: right;margin-right: 2vw;"><a href="../login/login.html">Log In</a></li>
+					</ul>
+		</div>			
+			<div class="wrap">
+			  <div id="arrow-left" class="arrow"></div>
+			  <div id="slider">
+			    <div class="slide slide1">
+			      <div class="slide-content">
+			        <span>Image One</span>
+			      </div>
+			    </div>
+			    <div class="slide slide2">
+			      <div class="slide-content">
+			        <span>Image Two</span>
+			      </div>
+			    </div>
+			    <div class="slide slide3">
+			      <div class="slide-content">
+			        <span>Image Three</span>
+			      </div>
+			    </div>
+			  </div>
+			  <div id="arrow-right" class="arrow"></div>
+			</div>
+			<script type="text/javascript">
+			  let sliderImages = document.querySelectorAll(".slide"),
+			  arrowLeft = document.querySelector("#arrow-left"),
+			  arrowRight = document.querySelector("#arrow-right"),
+			  current = 0;
+
+			// Clear all images
+			function reset() {
+			  for (let i = 0; i < sliderImages.length; i++) {
+			    sliderImages[i].style.display = "none";
+			  }
+			}
+
+			// Init slider
+			function startSlide() {
+			  reset();
+			  sliderImages[0].style.display = "block";
+			}
+
+			// Show prev
+			function slideLeft() {
+			  reset();
+			  sliderImages[current - 1].style.display = "block";
+			  current--;
+			}
+
+			// Show next
+			function slideRight() {
+			  reset();
+			  sliderImages[current + 1].style.display = "block";
+			  current++;
+			}
+
+			// Left arrow click
+			arrowLeft.addEventListener("click", function() {
+			  if (current === 0) {
+			    current = sliderImages.length;
+			  }
+			  slideLeft();
+			});
+
+			// Right arrow click
+			arrowRight.addEventListener("click", function() {
+			  if (current === sliderImages.length - 1) {
+			    current = -1;
+			  }
+			  slideRight();
+			});
+
+			startSlide();
+			</script>
+
+			<div id="overlay" ><h1> Harry Potter Ranking </h1>
+
+				<p >The Harry Potter franchise is a global phenomenon like few others. It’s been 11 years since the last book was released, seven years since the last movie hit theaters, and yet the IP is as strong as it ever was. Harry Potter is ubiquitous in the form of elaborate theme parks, Freeform marathons (RIP), video games, and of course the highly re-readable novels. This kind of longevity is rare, and it’s all to do with the quality of the story J.K. Rowling set out to tell over 20 years ago and the lush, tangible world she created.
+				But Harry Potter doesn’t begin and end with the books. As with anything that’s popular nowadays, Hollywood came calling rather quickly, and the first Harry Potter film was released a little over a year after Rowling’s fourth book hit the shelves. But in another minor miracle, the Harry Potter film franchise was able to maintain a level of quality rarely found in film series that stretch on past one or two movies, let alone eight.
+				The Harry Potter movies visualized what book readers had long fantasized about in their heads, and with the creative input and blessing of Rowling, they were able to evolve and grow just as the novels did, with four different directors bringing a variety of flavors to the series from film to film without sacrificing character, story, or continuity. It’s a magnificent accomplishment made all the more impressive by the fact that there’s not an outright bad movie in the bunch.
+				As the franchise remains as popular now as it was a decade ago, and with the films now playing on their new basic cable home at Syfy and USA, now seems like as good a time as any to revisit the Harry Potter films and rank them worst to best—a somewhat difficult task given the high standard of quality throughout.
+				A brief note before we begin, though: For the purposes of this feature, I’m evaluating each Harry Potter movie as a film first and foremost, not necessarily how it stacks up against its respective novel re: what was left out, what was added, etc.
+				With that said, let’s get started…
+				</p>
+				<h2>8. Harry Potter and the Chamber of Secrets</h2>
+				<img  src="../img/hp2.jpg" 
+					style=" margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 380px;" >
+
+				<p>
+				At 161 minutes, Chamber of Secrets is the longest film of the franchise, and perhaps not so coincidentally it’s also the last film to try and fit (almost) everything from the book into the movie. Director Chris Columbus expands on the world he built so beautifully in the first film with a slightly darker and much more plot-heavy sequel, and while the film isn’t bad per se, it’s definitely the most laborious of the bunch.
+				Though it’s certainly too long and meanders in places, there’s still much to like about Chamber of Secrets. Columbus nails the realization of Dobby, toeing the fine line between mischievously funny and irritating to deliver a visually impressive and genuinely adorable CG character. Columbus also does a fine job at further defining the wizarding world with issues like the pureblood cause and Hogwarts’ dark past. But while Chamber of Secrets is enjoyable enough (just being in the world of Harry Potter goes a long way), it doesn’t quite live up to the brilliance of the rest of the franchise.
+				
+				</p>
+				<h2>7. Harry Potter and the Deathly Hallows - Part 1</h2>
+				<img  src="../img/hp12.jpg" 
+					style=" margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 320px;" >
+				<p>
+				It’s tough to judge a film that is self-admittedly half a story, but since it’s presented as a separate entry into the Harry Potter series, Deathly Hallows – Part 1 must be evaluated as such. Book readers had their issues with the walkabout nature of the first half of the final book, so many were bracing for a somewhat sluggish film adaptation of those initial chapters. And while Deathly Hallows – Part 1 is mighty compelling for the first hour or so (seeing these characters out and about in the muggle world is a nice change of pace), it definitely loses steam in its second half. This is due in part to the fact that Harry, Ron, and Hermione are on a directionless hunt, disapparating from one gorgeous locale to the next as they bicker amongst themselves. This character conflict is necessary to set up the emotional payoff of Deathly Hallows – Part 2, but the act of watching a film that is almost all setup gets a bit monotonous.
+				And perhaps Deathly Hallows – Part 1’s biggest issue is just that—it’s a lot of setup for the finale without much room for payoff. It’s a necessity, and director David Yates and screenwriter Steve Kloves handle it about as well as they could, but in one film they have to lay the foundation for all the wand business, move Ron and Hermione towards a point where they can express their romantic feelings for one another, introduce Dumbledore’s secretive backstory, explain the Deathly Hallows, and solidify the raised stakes leading up to the Battle of Hogwarts—all without wrapping up a single one of these threads.
+				The film works beautifully as part of a whole, but as a standalone film it leaves plenty to be desired. That’s not to say Part 1 doesn’t have merit, however. There are even flashes of brilliance, from the strikingly haunting animated Deathly Hallows sequence to Harry and Hermione’s dance—a reprieve from the grave seriousness that surrounds them, and a sequence that reminds the audience that these are kids. Kids who have the weight of the world on their shoulders, and who for the first time are acting completely and utterly alone.
+				</p>
+				<h2>6. Harry Potter and the Goblet of Fire</h2>
+				<img  src="../img/hp5.jpg" 
+					style=" margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 320px;" >
+				<p>
+				It was with Goblet of Fire that J.K. Rowling’s novels took their big first step towards adulthood, expanding not only in size but also in scope, and director Mike Newell likewise rises to the challenge of introducing a wizarding world much larger than Hogwarts while also giving the franchise its first major onscreen appearance of Voldemort. It’s in between these two heavy tasks, though, that Newell really shines, as he picks up Prisoner of Azkaban’s theme of burgeoning adolescence and moves it into the realm of romance, tackling the teen characters’ awkward feelings about the opposite sex. He handles this quite well, with plenty of drama for Harry, Ron, and Hermione to go around on account of the looming ball and arrival of foreign students.
+				The scope of Goblet of Fire is unwieldy and the pacing of the film suffers a bit in places, but the emotional beats of the third act really land even if Voldemort’s arrival isn’t as terrifying as it could/should have been. The movie’s themes echo Harry’s series arc, as he is once again faced with an impossible challenge for which he was given no choice but to participate. That’s Harry’s life—he was bestowed this recognition and reputation as “The Chosen One” as a child, with no say in the matter, and he is constantly forced to rise to the occasion simply because he has to.
+				Goblet of Fire is arguably Rowling’s best Potter novel in the entire series, but here’s where things get conflated—just because it’s the best book doesn’t mean it’s the best movie. I saw this film before I had read the books and strongly disliked it, but after reading the series, came to love it. Those familiar with the books are able to flesh out parts of the films that fall short, and such is the case with Goblet of Fire. It’s certainly not a bad movie, and Newell brings a delightfully British energy to the proceedings, but it’s not as cohesive as some of the other installments in the film franchise.
+				</p>
+				<h2>5. Harry Potter and the Sorcerer's Stone</h2>
+				<img  src="../img/hp1.jpg" 
+					style=" margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 320px;" >
+				<p>
+				While it may not be as flashy, refined, or impressive as the rest of the films in the franchise, Sorcerer’s Stone (or Philosopher’s Stone for the Potter purists) deserves immense credit for setting up this series so wonderfully, and laying a fantastic foundation off of which the other films could be built. Director Chris Columbus was not only responsible for putting together the incredible cast, but he also captured Rowling’s wizarding world on film in a manner that felt relatable and wholly transfixing. Sorcerer’s Stone is told through the eyes of an 11-year-old, and so the film was always going to skew a bit younger than subsequent installments, but Columbus refuses to talk down to his audience and wisely sidesteps delving into cartoony kids’ movie land.
+				And even though it’s tonally the lightest film of the bunch, Sorcerer’s Stone still works wonderfully as a fantastic entry in the Potter franchise. The winning combination of charm and smarts permeates throughout, and Columbus nails the founding friendship of our three heroes, culminating in a grand finale that lets each one of them shine. Who can resist adorable Ron Weasley commanding a giant chess set with gusto as he sits atop a stone knight?
+				</p>
+				<h2>4. Harry Potter and the Order of the Phoenix</h2>
+				<img  src="../img/hp10.jpg" 
+					style=" margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 380px;" >
+				<p>
+				In what would mark the final director change for the series, David Yates makes his debut with the politically-tinged Order of the Phoenix. The film also happens to be the only Harry Potter movie not written by Steve Kloves (Michael Goldenberg took on scripting duties when Kloves declined to return, though he quickly changed his mind and was back for Half-Blood Prince), but the team forged on to craft the most adult entry yet. Yates deftly navigates themes of power and corruption through the wonderfully realized character of Dolores Umbridge, played to perfection by Imelda Staunton, who just might turn in the best performance of the entire franchise. The character is disgusting, disarming, and terrifying all at once, and her impact at Hogwarts spurs Harry and Co. to start taking matters into their own hands.
+				It’s clear from the onset that Order of the Phoenix is going to be a rather different film, as Yates opts to open the movie in the heat of the summer, in a new location, with a layered confrontation between Harry and Dudley. The subsequent introduction of the Order once again serves to prove that Harry is A) Not alone in his quest; and B) Severely lacking in information about what’s really going on. And the return of Sirius Black (Gary Oldman) bolsters the film’s emotional impact and deepens Harry’s arc, while the film also gives us some of the franchise’s best Harry-Snape scenes.
+				It all culminates in a visually arresting and surprisingly moving battle between Voldemort and Dumbledore at the Ministry of Magic, which is realized in a manner that’s both unexpected and deeply impactful. With his clear handle on character, theme, and set pieces, it’s no wonder Yates stuck around to see this franchise through to the end.
+
+				</p>
+				<h2>3. Harry Potter and the Half-Blood Prince</h2>
+				<img  src="../img/hp11.jpg" 
+					style=" margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 320px;" >
+				<p>
+				Director David Yates’ second brush with the franchise finds him navigating material that’s both some of the series’ lightest and darkest. Half-Blood Prince is certainly the funniest film of the franchise, with Yates and the cast reveling in romantic comedy territory throughout much of the story. Jim Broadbent brings a goofy quality to Professor Slughorn that never goes over the top, while Harry and Ron’s many brushes with the opposite sex provide loads of comedic material, culminating in the guffaw-inducing “Hermione’s got nice skin” exchange during a nighttime chat. Radcliffe, Grint, and Watson shine in these moments, and it at times feels like they’ve been waiting the whole series to knock these comedic beats out of the park.
+				And yet, for all its levity, Half-Blood Prince tackles some devastatingly dark material. The story beautifully builds to Dumbledore’s death (Yates’ decision to cut to a sea of wands pointing up at the sky in the immediate aftermath is a flash of brilliance) and Snape’s “betrayal” without the climax feeling like a shocking shift in tone, and Yates and screenwriter Steve Kloves weave in Voldemort’s backstory and the introduction of the horcruxes with ease. It’s this marvelous tonal balance that makes Half-Blood Prince one of the most affecting films of the series, swinging from laughter to tears at the drop of a hat.
+				And we haven’t even gotten to the film’s technical achievements yet. Yates and cinematographer Bruno Delbonell get ambitious with the film’s visuals by opting for a softer and richer palate, resulting in as lush a movie as you can get; Prisoner of Azkaban is gorgeous, but Half-Blood Prince has the best cinematography of the series hands down. And Order of the Phoenix composer Nicholas Hooper returns to craft quite possibly the best score of the franchise since John Williams’ work, also moving deftly between two wildly different tones.
+				Yates closes the film with an appropriate farewell to Hogwarts, setting himself up wonderfully for the one-two punch finale. But the tactful navigation of humor, thrills, and emotional devastation solidifies Half-Blood Prince as one of the best films in the series, and a tough act to follow.
+				</p>
+				<h2>2. Harry Potter and the Deathly Hallows - Part 2</h2>
+				<img  src="../img/hp13.jpg" 
+					style=" margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 380px;" >
+				<p>
+				Deathly Hallows – Part 1 was nearly all setup, but Deathly Hallows – Part 2 hits the ground running from the first frame and never lets up. This is a movie that is payoff in every sense: emotional payoff, action payoff, relationship payoff. Director David Yates had the unenviable task of wrapping up the most popular film franchise since Star Wars in a way that would satisfy even the most rabid of fans, and he absolutely sticks the landing with the most challenging film of the series.
+				Part 2 is almost operatic in nature, as it builds to a grand finale at the place where it all started: Hogwarts. Not only are the set pieces exhilarating, but they’re anchored by characters we’ve grown to love over the course of seven films, and Yates plays into that attachment to emotionally shattering results. He handles the deaths of many familiar faces in unexpected ways—the obvious manipulative play would’ve been to show Fred’s death with swelling music, but Yates and Kloves instead reveal Fred’s fate after the fact, surrounded by his family, to much more gut-punching results.
+				Perhaps the film’s most difficult task was to establish Snape as a (or arguably the) hero with a single sequence. Yates, Kloves, and Alan Rickman rise to the challenge in one of the franchise’s most emotional moments that not only leaves the audience in tears for brave, dear Snape, but also solidifies Harry’s purpose: he must die.
+				There are so many ways Deathly Hallows – Part 2 could’ve gone wrong, but given how wonderfully the Harry Potter filmmaking team had fared before, I guess it shouldn’t really be a surprise that they brought this thing home with the same utmost level of quality we’d seen previously. Harry Potter closes in glorious fashion with a film that not only serves as a superb conclusion, but also as a wholly satisfying entry unto itself.
+				</p>
+				<h2>1. Harry Potter and the Prisoner of Azkaban</h2>
+				<img  src="../img/hp4.jpg" 
+				style=" margin-left: 250px; direction: flex; max-height: 500px; max-width: 600px; width: 620px;  height: 320px;">
+				
+				<p>
+				The importance of The Prisoner of Azkaban to the Harry Potter film series cannot be overstated. This is the movie that established the creative direction and formula for the films that followed, as the series faced a crucial issue post-Chamber of Secrets. How does one adapt increasingly lengthy books into satisfying feature films? The solution: everything that is told from Harry’s point of view or that directly affects his character goes in, everything else is fair game for being dropped.
+				But it wasn’t only the POV rule that Azkaban established going forward; it was also the freedom to get creative—really creative. Director Alfonso Cuaron significantly altered the look and feel of Harry Potter without completely removing what Chris Columbus had built in the prior two films, while at the same time expanding the depth of the characters and, well, getting weird. From the Knight Bus sequence to the Hogwarts choir (plus frogs) to the Dementors, Prisoner of Azkaban is absolutely tactile—you can feel this world. And it’s a testament to Cuaron’s vision and cinematographer Michael Seresin’s beautiful photography that nearly every frame of film on this thing looks like a painting. The irises, the Womping Willow marking the changes of the season, the camera move through the clock—this thing is filled to the brim with unforgettable imagery.
+				Azkaban is also the film in which Radcliffe, Grint, and Watson really come into their own as actors and begin to forge a path that makes these characters their own. Radcliffe in particular shines opposite Gary Oldman and David Thewlis (Lupin), as the character’s unending search for a father figure continues. And Cuaron and Co. had the unenviable task of recasting Dumbledore following the great Richard Harris’ passing, but Michael Gambon picks up the baton beautifully—his performance neither tries to emulate Harris’ nor does it dishonor the actor’s previous characterization.
+				And while the time turner business is executed to perfection (Azkaban really is one of the most streamlined stories in Rowling’s book series), simply telling the story is not enough for Cuaron—everything is in service to character, which in turn services the film’s thematic throughline of burgeoning adolescence. As they enter puberty, these young characters begin to forge a path of independence, and Cuaron captures this wonderfully in manners both subtle (each actor wears his or her uniform slightly differently in this film) and obvious (Harry “running away from home” at the beginning).
+				The merits of Prisoner of Azkaban are almost unending, and while the Harry Potter franchise would lead to other outstanding entries in subsequent years, Cuaron’s film still marks the creative highpoint in one of the best, most diverse, and most satisfying film franchises of all time. At the risk of sounding cliché, Harry Potter and the Prisoner of Azkaban is pure magic.
+				</p>
+				
+			</div>
+			<div id="related articles">
+			
+			</div>
+
+	</body>
+</html>

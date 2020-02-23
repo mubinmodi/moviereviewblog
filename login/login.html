@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="overlay">
+    <div class="loginbox">
+        <img src="../img/person1.jpg">
+        <h1>Login Here</h1>
+        <form>
+            <p>Username</p>
+            <input id="username" type="text" placeholder="Enter Username">
+            <p>Password</p>
+            <input id="password" type="password" placeholder="Enter Password">
+            <input type="button" value="Login" onclick="login()">
+            <a href="register.html" class="me idek"><input type="button" value="Register" ></a>
+        </form>
+    </div>
+    </div>
+    
+<script>
+        function login(){
+            var form_username = document.getElementById('username').value;
+            var form_password = document.getElementById('password').value;
+            $.ajax({
+                url:"../backend/login.php", //the page containing php script
+                type: "post", //request type
+                data: {
+                    username: form_username,
+                    password: form_password
+                 },
+                success:function(data){
+                    if(data === "User exists")
+                        window.location = "../index.html";
+                    else
+                        alert(data);
+               }
+             });
+        }
+    </script>
+    
+    
+</body>
+</html>
